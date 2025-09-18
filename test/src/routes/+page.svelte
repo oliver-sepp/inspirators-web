@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import BottomLayer from '$lib/components/BottomLayer.svelte';
     import VectorLayer from '$lib/components/VectorLayer.svelte';
     import TopLayer from '$lib/components/TopLayer.svelte';
