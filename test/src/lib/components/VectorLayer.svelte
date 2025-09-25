@@ -1,4 +1,4 @@
-<div class="relative w-full h-screen bg-transparent overflow-hidden">
+<div class="relative w-full h-screen bg-transparent">
   <img src="/vectors/Vector-33.svg" alt="Vector 1" class="absolute inset-0 w-full h-auto opacity-8" />
   <img src="/vectors/Vector-44.svg" alt="Vector 2" class="absolute inset-0 w-full h-auto opacity-8" />
   <img src="/vectors/Vector-18.svg" alt="Vector 2" class="absolute inset-0 w-full h-auto opacity-8" />
