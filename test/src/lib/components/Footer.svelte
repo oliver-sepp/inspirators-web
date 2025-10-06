@@ -15,8 +15,8 @@
     </div>
 
     <div class="flex flex-col space-y-2">
-      <a href="." class="hover:underline">Contact Us</a>
-      <a href="." class="hover:underline">Contact Form</a>
+      <p>Contact Us</p>
+      <p>Contact Form</p>
       <a href="." class="hover:underline">info@inspirators.eu</a>
     </div>
 

@@ -47,21 +47,21 @@
         
         <div class="flex flex-col space-y-4 mx-10 w-5/6 text-[20px] md:w-1/6 lg:w-2/7">
             <p>
-                2024 was a groundbreaking year of innovation for Inspirators!
+                2024 was a groundbreaking year of innovation for <b>Inspirators!</b>
             </p>
             <ul class="list-disc list-inside">
                 <li class="mb-4">
-                    In November - our product FutuDraw won first place in the Innovative Products Competition organized by Cooperants at Space Tech Expo Bremen, the largest annual space event in Europe.
+                    In <i>November</i> - our product <b>FutuDraw</b> won <b>first place</b> in the <b>Innovative Products Competition</b> organized by <b>Cooperants</b> at <b>Space Tech Expo Bremen</b>, the largest annual space event in Europe.
                 </li>
                 <li class="mb-4">
-                    In September, we successfully co-organized the largest AI & Databricks Users Conference in the Baltics in collaboration with our partner Databricks, the industry leader in data science and machine learning platforms, as recognized by Gartner.
+                    In <i>September</i>, we successfully co-organized the <b>largest AI & Databricks Users Conference in the Baltics</b> in collaboration with our partner <b>Databricks</b>, the industry leader in <b>data science and machine learning platforms</b>, as recognized by <b>Gartner</b>.
                 </li>
                 <li class="mb-4">
-                In May, FutuDraw was recognized and funded at the Technopol AI Competition. With the industry generating and processing over 10,000 technical drawings annually, automation is essential—precisely what FutuDraw delivers. Our ambitious goal was to interpret technical drawings using AI, achieving an impressive 95% accuracy, compared to the industry average of 60–70%.
+                In <i>May</i>, FutuDraw was recognized and funded at the <b>Technopol AI Competition</b>. With the industry generating and processing over <b>10,000 technical drawings annually</b>, automation is essential—precisely what FutuDraw delivers. Our ambitious goal was to interpret technical drawings using AI, achieving an impressive <b>95%</b> accuracy, compared to the industry average of <b>60–70%</b>.
                 </li>
             </ul>
             <p>
-                2024 was also a remarkable year financially for Inspirators!. Our revenue grew, and we successfully expanded our products and services to Norway, marking a significant milestone in our international growth.
+                2024 was also a remarkable year financially for Inspirators!. Our revenue grew, and we successfully expanded our products and services to <b>Norway</b>, marking a significant milestone in our international growth.
             </p>
             
         </div>
