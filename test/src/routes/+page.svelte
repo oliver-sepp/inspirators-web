@@ -1,5 +1,4 @@
 <script lang="ts">
-    import BottomLayer from '$lib/components/BottomLayer.svelte';
     import VectorLayer from '$lib/components/VectorLayer.svelte';
     import TopLayer from '$lib/components/TopLayer.svelte';
     import MainContent_1 from '$lib/components/ContentSection-1.svelte';
@@ -9,7 +8,6 @@
 
 <div class=" min-h-screen w-full">
     
-    <BottomLayer />
     <VectorLayer />
     <TopLayer />
 

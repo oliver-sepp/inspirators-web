@@ -1,0 +1,28 @@
+[
+  {
+    "Products": {
+      "FutuDraw": "/products/futudraw",
+      "Effectino": "/products/effectino"
+    },
+    "Services": {
+      "Custom Software": "/services/custom",
+      "Cloud Solutions": "/services/cloud",
+      "AI and Machine Learning": "/services/machine-learning"
+    },
+    "Industries": {
+      "Factories, Production": "/industries/production",
+      "Energy, Utilities": "/industries/energy-util",
+      "Building Sector": "/industries/building"
+    },
+    "Partners": {
+      "We represent": "/partners/represent",
+      "We work with": "/partners/partners",
+      "We are member of": "/partners/member"
+    },
+    "About": {
+      "Story": "/about/inspirators",
+      "Team": "/about/team",
+      "Values": "/about/core-values"
+    }
+  }
+]
