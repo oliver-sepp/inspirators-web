@@ -1,10 +1,10 @@
 <div class="inset-0 z-20 flex flex-col md:flex-row justify-evenly items-center mt-[5vh] md:mt-[20vh] px-[10vw] gap-8 md:gap-[25vh]">
 
     <div class="flex flex-col space-y-2 order-2 md:order-1">
-        <h1 class="m-0 text-[5vh] text-[#05266A] md:text-[13vh]">
+        <h1 class="m-0 text-[clamp(1rem, 2rem, 3rem)] text-[#05266A] md:text-[13vh]">
             We
         </h1>
-        <h1 class="m-0 text-[5vh] text-[#05266A] md:text-[13vh]">
+        <h1 class="m-0 sm:text-[20vh] text-[#05266A] md:text-[13vh]">
             represent
         </h1>
     </div>

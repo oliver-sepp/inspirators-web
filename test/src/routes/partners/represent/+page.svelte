@@ -1,6 +1,8 @@
 <script lang="ts">
-import RepresentHeader from '$lib/components/represent/RepresentHeader.svelte';
-import RepresentContent from '$lib/components/represent/RepresentContent.svelte';
+import RepresentHeader from '$lib/components/partners/represent/RepresentHeader.svelte';
+import RepresentContent from '$lib/components/partners/represent/RepresentContent.svelte';
+
+
 
 </script>
 

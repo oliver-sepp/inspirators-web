@@ -1,7 +1,7 @@
 <div class="flex flex-col justify-between md:mt-[15vh] md:mb-[10vh]">
     <div class="flex flex-col justify-evenly w-full m-4 mb-20 md:flex-row">
         <div class="w-full text-[#05266A] mx-3 pb-14 relative md:w-2/5 mx-0">
-            <h1 class="text-[5vh] md:text-[8vh] lg:text-[8vh]">
+            <h1 class="text-[5vw] md:text-[8vh]">
                 Progress Software - Chef
             </h1>
             <span class="absolute bottom-0 left-0 w-1/2 border-b-4 border-[#7FC8CB]"></span>

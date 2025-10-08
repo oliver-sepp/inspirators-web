@@ -1,9 +1,9 @@
 <script lang="ts">
-import Content2021 from '$lib/components/story/2021.svelte';
-import Content2022 from '$lib/components/story/2022.svelte';
-import Content2023 from '$lib/components/story/2023.svelte';
-import Content2024 from '$lib/components/story/2024.svelte';
-import StoryHeader from '$lib/components/story/StoryHeader.svelte';
+import Content2021 from '$lib/components/about/story/2021.svelte';
+import Content2022 from '$lib/components/about/story/2022.svelte';
+import Content2023 from '$lib/components/about/story/2023.svelte';
+import Content2024 from '$lib/components/about/story/2024.svelte';
+import StoryHeader from '$lib/components/about/story/StoryHeader.svelte';
 
 </script>
 

@@ -3,9 +3,7 @@
 	import NavBar from '$lib/components/NavBar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import BottomLayer from '$lib/components/BottomLayer.svelte';
-	import VectorLayer from '$lib/components/VectorLayer.svelte';
 
-	import "../style.css";
 
 	let { children } = $props();
 </script>

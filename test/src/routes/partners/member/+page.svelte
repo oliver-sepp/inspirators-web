@@ -1,8 +1,8 @@
 <script lang="ts">
-import MemberHeader from '$lib/components/member/MemberHeader.svelte';
-import MemberContent1 from '$lib/components/member/MemberContent1.svelte';
-import MemberContent2 from '$lib/components/member/MemberContent2.svelte';
-import MemberContent3 from '$lib/components/member/MemberContent3.svelte';
+import MemberHeader from '$lib/components/partners/member/MemberHeader.svelte';
+import MemberContent1 from '$lib/components/partners/member/MemberContent1.svelte';
+import MemberContent2 from '$lib/components/partners/member/MemberContent2.svelte';
+import MemberContent3 from '$lib/components/partners/member/MemberContent3.svelte';
 
 
 </script>
