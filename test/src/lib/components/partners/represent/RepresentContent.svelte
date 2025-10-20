@@ -21,7 +21,7 @@
             </p>
         </div>
 
-        <div class="text-[20px] w-5/6 md:w-1/6 lg:w-2/7">
+        <div class="w-5/6 md:w-1/6 lg:w-2/7">
             <img 
             src="/represent/represent-image.webp" 
             alt=""

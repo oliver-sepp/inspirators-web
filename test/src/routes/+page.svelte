@@ -6,7 +6,7 @@
 </script>
 
 
-<div class=" min-h-screen w-full">
+<div class="min-h-screen w-full">
     
     <VectorLayer />
     <TopLayer />

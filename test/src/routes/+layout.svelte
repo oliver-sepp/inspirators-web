@@ -3,9 +3,12 @@
 	import NavBar from '$lib/components/NavBar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import BottomLayer from '$lib/components/BottomLayer.svelte';
+	import { page } from '$app/stores';
 
 
 	let { children } = $props();
+
+	const excludedPaths = [	'/products/futudraw', '/products/effectino',];
 </script>
 
 <svelte:head>
@@ -13,7 +16,10 @@
 </svelte:head>
 
 <NavBar />
-<BottomLayer />
+{#if !excludedPaths.includes($page.url.pathname)}
+<BottomLayer />	
+{/if}
+
 
 
 <main>

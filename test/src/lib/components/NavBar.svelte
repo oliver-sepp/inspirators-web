@@ -14,8 +14,6 @@ import { goto } from '$app/navigation';
   let subMenuOpen = false;
 
   
-
-
   onMount(() => {
     const handleScroll = () => {
       scrolled = window.scrollY > 20;
@@ -31,7 +29,6 @@ import { goto } from '$app/navigation';
 }
 
   function toggleSubMenu(link: string) {
-  console.log('Before toggle - active:', active || "null", 'link:', link, 'subMenuOpen:', subMenuOpen);
   
   if (active === link) {
     subMenuOpen = false;
@@ -40,8 +37,6 @@ import { goto } from '$app/navigation';
     active = link;
     subMenuOpen = true;
   }
-  
-  console.log('After toggle - active:', active, 'subMenuOpen:', subMenuOpen);
 }
 
   function clickOutside(node: HTMLElement) {
@@ -81,7 +76,7 @@ import { goto } from '$app/navigation';
 
 <div
   id="navigation"
-  class="fixed top-0 bg-transparent flex items-center justify-between px-3 sm:px-8 lg:px-10 z-[50] py-1 sm:py-6 lg:py-10 pb-3 sm:pb-4 lg:pb-6 w-full min-w-fit"
+  class="fixed top-0 bg-transparent flex items-center justify-between px-3 sm:px-8 lg:px-10 z-[50] py-1 sm:py-6 lg:py-10 pb-3 sm:pb-4 lg:pb-6 w-[100vw]"
   class:bg-transparent={!scrolled && !menuOpen}
   class:bg-white={scrolled || menuOpen}
   style="min-height: 60px;"
@@ -92,22 +87,22 @@ import { goto } from '$app/navigation';
     </a>
   </div>
 
-  <div class="hidden md:flex items-center md:gap-2 xl:gap-5 flex-shrink-0">
-    <div class="sm:text-[.5rem] md:text-[.5rem] lg:text-[1rem] flex sm:gap-[.5rem] md:gap-[1rem] lg:gap-[0] xl:gap-[2rem] items-center">
+  <div class="hidden min-[1025px]:flex items-center md:gap-2 xl:gap-5 flex-shrink-0">
+    <div class="sm:text-[.5rem] md:text-[.5rem] lg:text-[1rem] flex sm:gap-[.5rem] md:gap-[1rem] lg:gap-[0] xl:gap-[2rem] xl:mr-10 items-center">
       {#each links as link}
 	  <div 
 	  use:clickOutside
 	  class="relative inline-block">
         <button
           class="relative text-[12px] lg:text-[15px] xl:text-[20px] min-w-fit px-2 lg:px-0 lg:w-[100px] text-center transition-all duration-300 ease-in-out
-            text-[#05266A] font-normal hover:font-semibold whitespace-nowrap"
+            text-[var(--dark-blue)] font-normal hover:font-semibold whitespace-nowrap"
           class:font-semibold={active === link}
           on:click={() => { active = link; subMenuOpen = true; }}
         >
           {link}
           {#if active === link}
             <span
-              class="absolute left-0 -bottom-1 w-full border-b-2 border-[#7FC8CB]"
+              class="absolute left-0 -bottom-1 w-full border-b-2 border-[var(--light-blue)]"
             ></span>
           {/if}
         </button>
@@ -121,7 +116,7 @@ import { goto } from '$app/navigation';
   			{@const url = menuData[category][item as keyof typeof menuData[typeof category]]}
             <a 
               href={url}
-              class="submenu-item block py-2 rounded-md px-4 hover:bg-[#7FC8CD] text-[#05266A] whitespace-nowrap"
+              class="submenu-item block py-2 rounded-md text-[1.2rem] px-4 hover:bg-[var(--light-blue)] text-[var(--dark-blue)] whitespace-nowrap"
 			  on:click={(e) => {
 				e.preventDefault();
 				e.stopPropagation(); 
@@ -140,7 +135,7 @@ import { goto } from '$app/navigation';
     <div class="flex items-center gap-[clamp(0.5rem, 2vw, 2rem)] ml-1 lg:ml-0">
       <a
         href="."
-        class="text-[12px] lg:text-[17px] xl:text-[20px] text-[#05266A] mr-3 py-2 px-4 lg:px-10 lg:py-4 lg:py-4 bg-[#7FC8CB] rounded-full hover:bg-[#05266A] hover:text-[#7FC8CB] transition-all duration-400 ease-in-out whitespace-nowrap min-w-fit"
+        class="text-[12px] lg:text-[17px] xl:text-[20px] text-[var(--dark-blue)] mr-3 py-2 px-4 lg:px-14 lg:py-4 lg:py-4 bg-[var(--light-blue)] rounded-full hover:bg-[#05266A] hover:text-[#7FC8CB] transition-all duration-400 ease-in-out whitespace-nowrap min-w-fit"
         >Get in touch</a
       >
 
@@ -148,7 +143,7 @@ import { goto } from '$app/navigation';
       <div class="relative flex-shrink-0">
         <button
           type="button"
-          class="bg-[#05266A] p-1.5 lg:p-2.5 rounded-full cursor-pointer hover:bg-[#7FC8CB] transition-all min-w-fit"
+          class="bg-[var(--dark-blue)] p-1.5 lg:p-2.5 rounded-full cursor-pointer hover:bg-[var(--light-blue)] transition-all min-w-fit"
           on:click={() => (languagePopUpOpen = !languagePopUpOpen)}
         >
           <img
@@ -172,12 +167,13 @@ import { goto } from '$app/navigation';
     </div>
   </div>
 
-  <div class="md:hidden flex-shrink-0">
+  <div class="min-[1025px]:hidden flex-shrink-0">
     <button
       on:click={() => (menuOpen = !menuOpen)}
-      class="rounded-full bg-transparent text-[#05266A] text-2xl sm:text-3xl p-2 min-w-fit"
+      class="menu-button rounded-full bg-transparent text-[#05266A] text-2xl sm:text-3xl p-2 min-w-fit"
+      class:menu-open={menuOpen}
     >
-      ☰
+      {menuOpen ? '✕' : '☰'}
     </button>
   </div>
 </div>
@@ -185,8 +181,7 @@ import { goto } from '$app/navigation';
 <!-- Mobile menu -->
 {#if menuOpen}
   <div
-  use:clickOutsideMobile
-  class="fixed z-[9999] text-center top-16 sm:top-20 left-0 right-0 w-full bg-white text-[#05266A] p-5 md:px-8 overflow-y-auto shadow-md">
+  class="mobile-menu-slide fixed z-[9999] text-center top-16 sm:top-20 left-0 right-0 w-full bg-white text-[#05266A] p-5 md:px-8 overflow-y-auto shadow-md">
     {#each links as link}
       <div class="mb-2">
         <button
@@ -295,4 +290,28 @@ import { goto } from '$app/navigation';
       transform: translateX(0);
     }
   }
+
+  .menu-button {
+  transition: transform 0.3s ease;
+}
+
+.menu-button.menu-open {
+  transform: rotate(90deg);
+}
+
+/* Mobile menu slide down animation */
+.mobile-menu-slide {
+  animation: slideDown 0.4s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 </style>

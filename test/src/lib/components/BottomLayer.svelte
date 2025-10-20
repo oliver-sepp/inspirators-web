@@ -1,23 +1,20 @@
-<div class="absolute w-full -z-10 flex flex-col md:flex-row mt-[20vh] md:mt-[15vh] lg:mt-[25vh]">
+<div class="absolute w-full -z-10 overflow-hidden flex flex-col md:flex-row mt-[10vh] md:mt-[35vh] lg:mt-[25vh]">
   
-  <div class="flex justify-center items-start md:w-2/5">
-    
+  <div class="lg:w-1/12">
+
   </div>
 
-    <div class="w-full relative flex items-center md:w-3/5">
+  <div class="w-full flex justify-center items-center lg:w-6/12">
     
-        <div class="flex space-x-4">
+    <div class="flex w-full">
       
-            <img src="/bg-big-A.png" alt="Big A" class="h-[35vh] md:h-[40vh] lg:h-[70vh] max-w-full">
-            <img src="/bg-big-I.png" alt="Big I" class="h-[35vh] md:h-[40vh] lg:h-[70vh] max-w-full">
+      <img src="/bg-big-A.png" alt="Big A" class="h-[25vh] sm:h-[30vh] md:h-[40vh] lg:h-[65vh] flex-1 min-w-0 object-contain">
+      <img src="/bg-big-I.png" alt="Big I" class="h-[25vh] sm:h-[30vh] md:h-[40vh] lg:h-[65vh] flex-1 min-w-0 object-contain">
     
-        </div>
-  
     </div>
+  
+  </div>
 
-    <img src="/bg-big-dark.png" alt="Big Dark" class="absolute right-0 h-[35vh] md:h-[40vh] lg:h-[70vh] max-w-full pt-4">
+  <img src="/bg-big-dark.png" alt="Big Dark" class="absolute hidden min-[800px]:inline mt-20 md:mt-0 right-0 h-[35vh] md:h-[40vh] lg:h-[70vh] w-auto object-contain pt-4">
 
 </div>
-
-
-

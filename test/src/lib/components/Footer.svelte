@@ -21,7 +21,7 @@
     </div>
 
     <div class="flex flex-col space-y-2">
-      <a href="." class="hover:underline">Follow Us</a>
+      <p>Follow Us</p>
       <a href="." class="hover:underline">LinkedIn</a>
     </div>
   </div>

@@ -13,8 +13,8 @@
             <img src="/01.png" alt="01" class="max-h-10 md:max-h-20 w-auto mr-7">
         </div>
     </div>
-    <div class="flex flex-col justify-evenly gap-[3vw] text-[#05266A] md:flex-row gap-[5vw]">
-        <div class="flex flex-col space-y-4 mx-10 w-5/6 text-[20px] md:w-1/6">
+    <div class="flex flex-col justify-center gap-[3vw] text-[#05266A] md:flex-row gap-[5vw]">
+        <div class="flex flex-col space-y-4 mx-10 w-5/6 text-[20px] md:w-2/6">
             <p>
                 Maintaining and evolving legacy software is one of the biggest challenges facing modern companies - especially when source code is complex, outdated and poorly documentd.
             </p>
@@ -25,7 +25,7 @@
                 Our AI-Assisted Analysis & Development helps engineering and software teams analyze and work with legacy code up to 10x faster.
             </p>
         </div>
-        <div class="text-[20px] w-5/6 ml-10 md:w-1/6">
+        <div class="text-[20px] w-5/6 ml-10 md:w-2/6">
             <div class="flex flex-row mb-8 items-start md:mb-4">
                 <img src="/checkmark.png" alt="checkmark" class="w-6 object-contain mr-4 pt-1.5">
                 <p>

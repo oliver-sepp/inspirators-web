@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
+:root {
+    --light-blue: #7FC8CD;
+    --dark-blue: #05266A;
+    --theme-white: #F4F3F1;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     overflow-x: hidden; /* prevents horizontal scroll */
 }
+
