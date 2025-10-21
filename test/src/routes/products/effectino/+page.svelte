@@ -8,6 +8,7 @@ import EffectinoLongDesc from "$lib/components/products/effectino/EffectinoLongD
 import EffectinoPricing from "$lib/components/products/effectino/EffectinoPricing.svelte";
 import EffectinoFAQ from "$lib/components/products/effectino/EffectinoFAQ.svelte";
 import EffectinoComment from "$lib/components/products/effectino/EffectinoComment.svelte";
+import EffectinoFlowChart from "$lib/components/products/effectino/EffectinoFlowChart.svelte";
 </script>
 
 
@@ -21,6 +22,7 @@ import EffectinoComment from "$lib/components/products/effectino/EffectinoCommen
         <EffectinoBenefits />
         <EffectinoLongDesc />
         <EffectinoPricing />
+        <EffectinoFlowChart />
         <EffectinoComment />
         <EffectinoFAQ />
     </main>

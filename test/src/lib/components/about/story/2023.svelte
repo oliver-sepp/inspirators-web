@@ -1,4 +1,4 @@
-<div class="flex flex-col justify-between md:mt-[15vh]  mb-[5vh] md:mb-[10vh]">
+<div class="flex flex-col justify-between md:mt-[15vh] mb-[5vh] md:mb-[10vh]">
     <div class="flex flex-col justify-evenly w-full m-4 mb-20 md:flex-row">
         <div class="w-full text-[#05266A] mx-3 pb-14 relative md:w-2/5 mx-0">
             <h1 class="text-[3rem] md:text-[4rem] lg:text-[3rem]">
@@ -8,9 +8,8 @@
         </div>
 
         <div class="flex flex-row mt-10 ml-4" >
-            <img src="/stopwatch.png" alt="stopwatch" class="max-h-10 md:max-h-20 w-auto mr-7">
             <img src="/arrow-right.png" alt="arrow" class="max-h-10 md:max-h-20 w-auto mr-7">
-            <img src="/01.png" alt="01" class="max-h-10 md:max-h-20 w-auto mr-7">
+            <img src="/02.png" alt="01" class="max-h-10 md:max-h-20 w-auto mr-7">
         </div>
     </div>
     <div class="flex flex-col justify-center m-4 items-center min-[1000px]:items-start gap-[5vw] text-[#05266A] min-[1000px]:flex-row md:gap-[10vw]">

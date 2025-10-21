@@ -4,7 +4,7 @@
 
   </div>
 
-  <div class="w-full flex justify-center items-center lg:w-6/12">
+  <div class="w-full flex justify-center items-center lg:w-11/12">
     
     <div class="flex w-full">
       

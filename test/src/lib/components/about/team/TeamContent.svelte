@@ -8,7 +8,6 @@
         </div>
 
         <div class="flex flex-row mt-10 ml-4" >
-            <img src="/stopwatch.png" alt="stopwatch" class="max-h-10 md:max-h-15 lg:max-h-20 w-auto mr-7">
             <img src="/arrow-right.png" alt="arrow" class="max-h-10 md:max-h-15 lg:max-h-20 w-auto mr-7">
             <img src="/01.png" alt="01" class="max-h-10 md:max-h-15 lg:max-h-20 w-auto mr-7">
         </div>
