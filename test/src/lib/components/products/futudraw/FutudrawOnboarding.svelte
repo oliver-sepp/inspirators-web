@@ -9,7 +9,7 @@
 
         <div class="flex flex-row mt-10" >
             <img src="/arrow-right.png" alt="arrow" class="max-h-10 md:max-h-20 w-auto mr-7">
-            <img src="/01.png" alt="01" class="max-h-10 md:max-h-20 w-auto mr-7">
+            <img src="/03.png" alt="01" class="max-h-10 md:max-h-20 w-auto mr-7">
         </div>
     </div>
     <div class="flex justify-center text-[#05266A]">

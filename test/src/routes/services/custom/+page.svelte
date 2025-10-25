@@ -1,5 +1,5 @@
 <script lang="ts">
-import VectorLayer from "$lib/components/VectorLayer.svelte";
+import VectorLayer from "$lib/components/shared/VectorLayer.svelte";
 import CustomHeader from "$lib/components/services/custom/CustomHeader.svelte";
 import CustomContent1 from "$lib/components/services/custom/CustomContent1.svelte";
 import CustomContent2 from "$lib/components/services/custom/CustomContent2.svelte";

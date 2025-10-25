@@ -1,21 +1,19 @@
 <script lang="ts">
-    import BottomLayer from '$lib/components/BottomLayer.svelte';
-    import VectorLayer from '$lib/components/VectorLayer.svelte';
-    import TopLayer from '$lib/components/TopLayer.svelte';
-    import MainContent_1 from '$lib/components/ContentSection-1.svelte';
-    import MainContent_2 from '$lib/components/ContentSection-2.svelte';
+    import VectorLayer from '$lib/components/shared/VectorLayer.svelte';
+    import AnalysisHeader from '$lib/components/services/analysis/AnalysisHeader.svelte';
+    import AnalysisContent1 from '$lib/components/services/analysis/AnalysisContent1.svelte';
+    import AnalysisContent2 from '$lib/components/services/analysis/AnalysisContent2.svelte';
 </script>
 
 
 <div class=" min-h-screen w-full">
     
-    <BottomLayer />
     <VectorLayer />
-    <TopLayer />
+    <AnalysisHeader />
 
     <main class="w-full">
-        <MainContent_1 />
-        <MainContent_2 />
+        <AnalysisContent1 />
+        <AnalysisContent2 />
     </main>
 
 </div>

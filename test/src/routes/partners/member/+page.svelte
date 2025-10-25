@@ -2,7 +2,7 @@
 import MemberHeader from '$lib/components/partners/member/MemberHeader.svelte';
 import MemberContent1 from '$lib/components/partners/member/MemberContent1.svelte';
 import MemberContent2 from '$lib/components/partners/member/MemberContent2.svelte';
-import VectorLayer from '$lib/components/VectorLayer.svelte';
+import VectorLayer from '$lib/components/shared/VectorLayer.svelte';
 
 </script>
 

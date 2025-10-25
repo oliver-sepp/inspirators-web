@@ -9,18 +9,18 @@
 
         <div class="flex flex-row mt-10 ml-4" >
             <img src="/arrow-right.png" alt="arrow" class="max-h-10 md:max-h-20 w-auto mr-7">
-            <img src="/02.png" alt="01" class="max-h-10 md:max-h-20 w-auto mr-7">
+            <img src="/02.png" alt="02" class="max-h-10 md:max-h-20 w-auto mr-7">
         </div>
     </div>
     <div class="flex flex-col justify-center items-start gap-[10vw] text-[#05266A] md:flex-row gap-[5vw]">
         
-        <div class="flex flex-col space-y-4 mx-10 w-5/6 text-[20px] md:w-1/6 lg:w-2/7">
+        <div class="flex order-1 min-[1000px]:order-2 flex-col space-y-4 mx-10 w-5/6 text-[20px] md:w-1/6 lg:w-2/7">
             <p>
                 Inspirators! is a member of the German-Baltic Chamber of Commerce in Estonia, Latvia, Lithuania (AHK). The AHK represents around 460 member companies in German-Baltic trade relations, providing them with the following services: business-to-business contacts as well as assisting them with its services.
             </p>
         </div>
 
-        <div class="w-1/1 flex justify-center md:w-1/6 lg:w-2/7 overflow-hidden">
+        <div class="w-1/1 flex order-2 min-[1000px]:order-1 justify-center md:w-1/6 lg:w-2/7 overflow-hidden">
             <img 
             src="/member/member-image2.png" 
             alt=""

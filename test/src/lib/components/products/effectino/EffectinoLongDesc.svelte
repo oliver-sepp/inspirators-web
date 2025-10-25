@@ -15,8 +15,8 @@
         class="max-h-10 md:max-h-15 lg:max-h-20 w-auto mr-7"
       />
       <img
-        src="/01.png"
-        alt="01"
+        src="/02.png"
+        alt="02"
         class="max-h-10 md:max-h-15 lg:max-h-20 w-auto mr-7"
       />
     </div>

@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
 const lightSend = "effectino/send_light.svg";
 const darkSend = "effectino/send_dark.svg";
 </script>
@@ -79,4 +79,54 @@ const darkSend = "effectino/send_dark.svg";
     </div>
 </div>
 
+</div> -->
+
+<div class="flex flex-col justify-center items-center mt-20">
+    <div class="flex flex-row justify-center align-center w-full mb-20">
+        <div class="w-full text-[#05266A] mx-3 pb-14 relative md:w-4/5 xl:w-3/5 mx-0">
+            <h1 class="text-[3rem] md:text-[3rem] lg:text-[5rem] w-full text-center">
+                <b>Effectino Process Flow</b>
+            </h1>
+            <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full sm:w-3/4 border-b-4 border-[#7FC8CB]"></span>
+        </div>
+
+    </div>
+    <div class="flex flex-col min-[1000px]:flex-row gap-[3rem] justify-center items-center m-6">
+        <div class="flex flex-col gap-6 text-[1.5rem] justify-center text-[var(--dark-blue)] w-5/6 min-[1000px]:max-w-2/9">
+            <div>
+                <p><b>1. Order arrives in the Effectino app</b></p>
+                <p>
+                    Orders are sent from the ERP system directly to the app located at each workstation.
+                </p>
+            </div>
+            <div>
+                <p><b>2. Employees select work from the app</b></p>
+                <p>
+                    Workers or teams choose tasks based on a priority list created by team leads — ensuring that the most critical jobs are completed first.
+                </p>
+            </div>
+            <div>
+                <p><b>3. Work logging (pauses, quantities, completion, etc.)</b></p>
+                <p>
+                    Employees log breaks, lunch, work sessions, and quantities produced. All data is recorded in real time for each task.
+                </p>
+            </div>
+            <div>
+                <p><b>4. Dashboard & analytics</b></p>
+                <p>
+                    Factory monitors and team lead dashboards display order progress — completed work, ETA vs. actual performance, and ongoing tasks.
+                </p>
+            </div>
+            <div>
+                <p><b>5. Data sent to Power BI</b></p>
+                <p>
+                    In addition to real-time analytics and dashboards, data is sent to Power BI for financial comparison, performance tracking, and ETA optimization.
+                </p>
+            </div>            
+        </div>
+        <div class="bg-transparent p-10 w-fit rounded-xl">
+            <img src="effectino/processflow.png" alt="process flow">
+        </div>
+    </div>
+    
 </div>

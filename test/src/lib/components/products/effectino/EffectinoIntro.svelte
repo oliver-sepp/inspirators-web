@@ -1,3 +1,17 @@
+<script lang="ts">
+import EffectinoVideo from "./EffectinoVideo.svelte";
+let showVideo= false;
+let videoSource = '/products/futudraw/FutuDraw-Animation.mp4';
+
+function openVideo() {
+    showVideo = true;
+  }
+  
+  function closeVideo() {
+    showVideo = false;
+  }
+
+</script>
 <div class="flex flex-col justify-between md:mt-[15vh]">
     <div class="flex flex-row justify-center align-center w-full mb-20">
         <div class="w-full text-[#05266A] mx-3 pb-14 relative md:w-2/5 mx-0">
@@ -16,7 +30,9 @@
         </div>
     </div>
     <div class="flex justify-center items-center md:py-10">
-        <button class="bg-[var(--dark-blue)] text-white rounded-full px-10 py-6 mt-10 md:my-10 flex items-center text-[20px] whitespace-nowrap cursor-pointer hover:bg-blue-900 transition-all duration-300 ease-in-out">
+        <button 
+        on:click={openVideo}
+        class="bg-[var(--dark-blue)] z-49 text-white rounded-full px-10 py-6 mt-10 md:my-10 flex items-center text-[20px] whitespace-nowrap cursor-pointer hover:bg-blue-900 transition-all duration-300 ease-in-out">
             <img 
             src="/products/futudraw/play-video.svg" 
             alt="Play Video" 
@@ -34,3 +50,9 @@
     </div>
 
 </div>
+
+<EffectinoVideo 
+    videoSrc={videoSource} 
+    isOpen={showVideo} 
+    onClose={closeVideo} 
+/>

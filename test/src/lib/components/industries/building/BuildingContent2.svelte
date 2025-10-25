@@ -22,7 +22,7 @@
             class="w-9/10 sm:w-full h-auto object-contain rounded-lg shadow-lg">
         </div>
 
-        <div class="flex flex-col space-y-4 lg:mx-10 w-5/6 text-[20px] lg:w-2/7">
+        <div class="flex min-[1000px]:order-2 flex-col space-y-4 lg:mx-10 w-5/6 text-[20px] lg:w-2/7">
             <div class="flex flex-row mb-4 items-start">
                 <img src="/checkmark.png" alt="checkmark" class="w-6 object-contain mr-4 pt-1.5">
                 <p>

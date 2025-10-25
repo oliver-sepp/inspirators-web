@@ -9,7 +9,7 @@
 
         <div class="flex flex-row mt-10 ml-4" >
             <img src="/arrow-right.png" alt="arrow" class="max-h-10 md:max-h-20 w-auto mr-7">
-            <img src="/01.png" alt="01" class="max-h-10 md:max-h-20 w-auto mr-7">
+            <img src="/03.png" alt="03" class="max-h-10 md:max-h-20 w-auto mr-7">
         </div>
     </div>
     <div class="flex flex-col justify-center m-4 items-center min-[1000px]:items-start gap-[5vw] text-[#05266A] min-[1000px]:flex-row md:gap-[10vw]">
@@ -36,7 +36,7 @@
         <div 
             class="w-1/1 order-2 min-[1000px]:order-1 flex justify-center md:block md:w-2/6 lg:w-2/7 overflow-hidden">
             <img 
-                src="/values/values-image3.png" 
+                src="/values/values-image3.png?format=webp" 
                 alt=""
                 class="w-9/10 sm:w-full h-auto object-contain rounded-lg shadow-lg"
                 >

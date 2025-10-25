@@ -1,7 +1,7 @@
 <script lang="ts">
 	import favicon from '$lib/assets/favicon-32x32.png';
-	import NavBar from '$lib/components/NavBar.svelte';
-	import Footer from '$lib/components/Footer.svelte';
+	import NavBar from '$lib/components/shared/NavBar.svelte';
+	import Footer from '$lib/components/shared/Footer.svelte';
 	import BottomLayer from '$lib/components/BottomLayer.svelte';
 	import { page } from '$app/stores';
 

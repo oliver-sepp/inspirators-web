@@ -6,15 +6,15 @@
 
   <div class="w-full flex justify-center items-center lg:w-11/12">
     
-    <div class="flex w-full">
+    <div class="flex w-fit">
       
-      <img src="/bg-big-A.png" alt="Big A" class="h-[25vh] sm:h-[30vh] md:h-[40vh] lg:h-[65vh] flex-1 min-w-0 object-contain">
-      <img src="/bg-big-I.png" alt="Big I" class="h-[25vh] sm:h-[30vh] md:h-[40vh] lg:h-[65vh] flex-1 min-w-0 object-contain">
+      <img src="/bg-big-A.png?format=webp" alt="Big A" class="h-[25vh] sm:h-[30vh] md:h-[40vh] lg:h-[65vh] flex-1 object-contain">
+      <img src="/bg-big-I.png?format=webp" alt="Big I" class="h-[25vh] sm:h-[30vh] md:h-[40vh] lg:h-[65vh] flex-1 object-contain">
     
     </div>
   
   </div>
 
-  <img src="/bg-big-dark.png" alt="Big Dark" class="absolute hidden min-[800px]:inline mt-20 md:mt-0 right-0 h-[35vh] md:h-[40vh] lg:h-[70vh] w-auto object-contain pt-4">
+  <img src="/bg-big-dark.png?format=webp" alt="Big Dark" class="absolute hidden min-[800px]:inline mt-20 md:mt-0 right-0 h-[35vh] md:h-[40vh] lg:h-[70vh] w-auto object-contain pt-4">
 
 </div>

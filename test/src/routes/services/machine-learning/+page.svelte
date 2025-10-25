@@ -1,5 +1,5 @@
 <script lang="ts">
-import VectorLayer from "$lib/components/VectorLayer.svelte";
+import VectorLayer from "$lib/components/shared/VectorLayer.svelte";
 import MLHeader from "$lib/components/services/machine-learning/ML-Header.svelte";
 import MLIntro from "$lib/components/services/machine-learning/ML-Intro.svelte";
 import MLPredictions from "$lib/components/services/machine-learning/ML-Predictions.svelte";

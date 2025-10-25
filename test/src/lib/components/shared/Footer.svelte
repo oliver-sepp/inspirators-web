@@ -17,12 +17,12 @@
     <div class="flex flex-col space-y-2">
       <p>Contact Us</p>
       <p>Contact Form</p>
-      <a href="." class="hover:underline">info@inspirators.eu</a>
+      <a href="mailto:info@inspirators.eu?subject=Contact request" target="_blank" class="hover:underline">info@inspirators.eu</a>
     </div>
 
     <div class="flex flex-col space-y-2">
       <p>Follow Us</p>
-      <a href="." class="hover:underline">LinkedIn</a>
+      <a href="https://www.linkedin.com/company/inspirators-eu/" target="_blank" class="hover:underline">LinkedIn</a>
     </div>
   </div>
 </div>

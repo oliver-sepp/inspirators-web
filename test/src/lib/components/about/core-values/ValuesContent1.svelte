@@ -27,7 +27,7 @@
         <div 
             class="w-1/1 order-2 min-[1000px]:order-1 flex justify-center md:block md:w-2/6 lg:w-2/7 overflow-hidden">
             <img 
-                src="/values/values-image1.jpg" 
+                src="/values/values-image1.jpg?format=webp" 
                 alt=""
                 class="w-9/10 sm:w-full h-auto object-contain rounded-lg shadow-lg"
                 >

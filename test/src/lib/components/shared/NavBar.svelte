@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import LanguagePopUp from "./LanguagePopUp.svelte";
-  import Links from "../navbar-options/links.json";
+  import Links from "../../navbar-options/links.json";
 import { goto } from '$app/navigation';
 
   const menuData = Links[0];
@@ -134,7 +134,8 @@ import { goto } from '$app/navigation';
 
     <div class="flex items-center gap-[clamp(0.5rem, 2vw, 2rem)] ml-1 lg:ml-0">
       <a
-        href="."
+        href="mailto:info@inspirators.eu?subject=Contact Request"
+        target="_blank"
         class="text-[12px] lg:text-[17px] xl:text-[20px] text-[var(--dark-blue)] mr-3 py-2 px-4 lg:px-14 lg:py-4 lg:py-4 bg-[var(--light-blue)] rounded-full hover:bg-[#05266A] hover:text-[#7FC8CB] transition-all duration-400 ease-in-out whitespace-nowrap min-w-fit"
         >Get in touch</a
       >

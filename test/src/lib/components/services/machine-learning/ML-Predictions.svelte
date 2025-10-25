@@ -9,7 +9,7 @@
 
         <div class="flex flex-row mt-10 ml-4" >
             <img src="/arrow-right.png" alt="arrow" class="max-h-10 md:max-h-15 lg:max-h-20 w-auto mr-7">
-            <img src="/01.png" alt="01" class="max-h-10 md:max-h-15 lg:max-h-20 w-auto mr-7">
+            <img src="/02.png" alt="02" class="max-h-10 md:max-h-15 lg:max-h-20 w-auto mr-7">
         </div>
     </div>
     <div class="flex flex-col justify-center items-center min-[1000px]:items-start md:gap-[10vw] text-[#05266A] min-[1000px]:flex-row gap-[5vw]">

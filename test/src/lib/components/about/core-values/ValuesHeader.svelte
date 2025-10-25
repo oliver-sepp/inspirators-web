@@ -12,6 +12,6 @@
         </h1>
     </div>
     <div class="w-4/5 order-1 md:order-2 md:w-3/5 max-h-full">
-        <img src="/humanoid-robot.png" alt="Humanoid robot" class="w-full h-full object-contain max-h-[50vh] md:max-h-[80vh]">
+        <img src="/humanoid-robot.png?format=webp" alt="Humanoid robot" class="w-full h-full object-contain max-h-[50vh] md:max-h-[80vh]">
     </div>
 </div>

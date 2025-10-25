@@ -1,6 +1,6 @@
 <script lang="ts">
 import FutudrawHeader from '$lib/components/products/futudraw/FutudrawHeader.svelte';
-import VectorLayer from '$lib/components/VectorLayer.svelte';
+import VectorLayer from '$lib/components/shared/VectorLayer.svelte';
 import FutudrawBottomLayer from '$lib/components/products/futudraw/FutudrawBottomLayer.svelte';
 import FutudrawIntro from '$lib/components/products/futudraw/FutudrawIntro.svelte';
 import WhyFutudraw from '$lib/components/products/futudraw/WhyFutudraw.svelte';
