@@ -11,13 +11,13 @@ const config = {
     adapter: adapter({
       pages: 'build',
       assets: 'build',
-      fallback: '404.html',
+      fallback: undefined,
 	  strict: false,
     }),
     paths: {
       base: dev ? '' : '/inspirators-web',
     },
-    appDir: 'internal', // prevents conflicts with GitHub Pages cache
+    appDir: 'internal',
   },
 };
 

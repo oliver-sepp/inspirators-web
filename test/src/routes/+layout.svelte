@@ -7,6 +7,11 @@
 	import { base } from '$app/paths';
 	import '../style.css';
 
+	export const prerender = true;
+export const ssr = false;
+export const csr = true;
+export const trailingSlash = 'always';
+
 	let { children } = $props();
 
 	const excludedPaths = ['/products/futudraw', '/products/effectino'];

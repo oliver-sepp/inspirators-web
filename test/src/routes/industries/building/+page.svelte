@@ -1,8 +1,8 @@
 <script lang="ts">
-import BuildingHeader from "$lib/components/about/story/industries/building/BuildingHeader.svelte";
-import BuildingContent1 from "$lib/components/about/story/industries/building/BuildingContent1.svelte";
+import BuildingHeader from "$lib/components/industries/building/BuildingHeader.svelte";
+import BuildingContent1 from "$lib/components/industries/building/BuildingContent1.svelte";
 import VectorLayer from "$lib/components/shared/VectorLayer.svelte";
-import BuildingContent2 from "$lib/components/about/story/industries/building/BuildingContent2.svelte";
+import BuildingContent2 from "$lib/components/industries/building/BuildingContent2.svelte";
 
 </script>
 
