@@ -1,3 +1,11 @@
+<script lang="ts">
+    import prediction from '$lib/assets/products/effectino/bar_chart_light.svg';
+    import dashboard from '$lib/assets/products/effectino/monitoring_light.svg';
+    import excel from '$lib/assets/machine-learning/excel.svg';
+    import dataMesh from '$lib/assets/machine-learning/data-mesh.svg';
+    import databricks from '$lib/assets/machine-learning/db-icon.svg';
+</script>
+
 <div class="flex flex-col justify-between mt-[10vh] md:mt-[15vh]">
     <div class="flex flex-row justify-center align-center w-full mb-20">
         <div class="w-full text-[#05266A] mx-3 pb-14 relative md:w-3/5 xl:w-2/5 mx-0">
@@ -10,32 +18,32 @@
     </div>
     <div class="w-full flex flex-wrap justify-center gap-6 mb-20 px-4">
     <div class="w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] xl:w-[calc(20%-1.2rem)] min-w-[380px] text-center text-[var(--dark-blue)] bg-white shadow-lg rounded-2xl flex flex-col justify-start gap-[2.5rem] items-center p-10 relative">
-        <img src="/products/effectino/bar_chart_light.svg" alt="bar chart" class="min-w-[100px]">
+        <img src={prediction} alt="bar chart" class="min-w-[100px]">
 
         <h1 class="text-[2rem] lg:text-[2.4rem]">
             <b>Real-Time Data Analytics & Predictions</b>
         </h1>
     </div>
     <div class="w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] xl:w-[calc(20%-1.2rem)] min-w-[380px] text-center text-[var(--dark-blue)] bg-white shadow-lg rounded-2xl flex flex-col justify-start gap-[2.5rem] items-center p-10 relative">
-        <img src="/products/effectino/monitoring_light.svg" alt="dashboard" class="min-w-[100px]">
+        <img src={dashboard} alt="dashboard" class="min-w-[100px]">
         <h1 class="text-[2rem] lg:text-[2.4rem]">
             <b>Intuitive Dashboards</b>
         </h1>
     </div>
     <div class="w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] xl:w-[calc(20%-1.2rem)] min-w-[380px] text-center text-[var(--dark-blue)] bg-white shadow-lg rounded-2xl flex flex-col justify-start gap-[2.5rem] items-center p-10 relative">
-        <img src="/machine-learning/excel.svg" alt="excel" class="min-w-[100px]">
+        <img src={excel} alt="excel" class="min-w-[100px]">
         <h1 class="text-[2rem] lg:text-[2.4rem]">
             <b>Excel Replacement</b>
         </h1>
     </div>
     <div class="w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] xl:w-[calc(20%-1.2rem)] min-w-[380px] text-center text-[var(--dark-blue)] bg-white shadow-lg rounded-2xl flex flex-col justify-start gap-[2.5rem] items-center p-10 relative">
-        <img src="/machine-learning/data-mesh.svg" alt="send" class="min-w-[100px]">
+        <img src={dataMesh} alt="send" class="min-w-[100px]">
         <h1 class="text-[2rem] lg:text-[2.4rem]">
             <b>Data Mesh</b>
         </h1>
     </div>
     <div class="w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] xl:w-[calc(20%-1.2rem)] min-w-[380px] text-center text-[var(--dark-blue)] bg-white shadow-lg rounded-2xl flex flex-col justify-start gap-[2.5rem] items-center p-10 relative">
-        <img src="/machine-learning/db-icon.svg" alt="send" class="min-w-[100px]">
+        <img src={databricks} alt="send" class="min-w-[100px]">
         <h1 class="text-[2rem] lg:text-[2.4rem]">
             <b>Databricks Technology</b>
         </h1>

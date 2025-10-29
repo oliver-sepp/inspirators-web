@@ -1,30 +1,17 @@
+<script lang="ts">
+  // Import all SVG files dynamically from the folder
+  const vectorModules = import.meta.glob('$lib/assets/vectors/*.svg', { eager: true });
+
+  // Extract URLs from the imported modules
+  const vectors = Object.values(vectorModules).map((mod: any) => mod.default);
+</script>
+
 <div class="relative w-full h-screen bg-transparent">
-  <img src="/vectors/Vector-44.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-33.svg" alt="Vector 1" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-18.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-41.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-42.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-43.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-45.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-46.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-47.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-48.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-49.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-50.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-51.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-52.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-53.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-54.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-55.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-56.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-57.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-58.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-59.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-60.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-61.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-62.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-63.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-64.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-65.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
-  <img src="/vectors/Vector-66.svg" alt="Vector 2" class="absolute inset-0 w-full max-h-[150vh] opacity-8" />
+  {#each vectors as vector}
+    <img
+      src={vector}
+      alt="Vector"
+      class="absolute inset-0 w-full max-h-[150vh] opacity-8"
+    />
+  {/each}
 </div>

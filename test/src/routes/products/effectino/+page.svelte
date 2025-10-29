@@ -20,10 +20,10 @@ import EffectinoFlowChart from "$lib/components/products/effectino/EffectinoFlow
     <main class="w-full">
         <EffectinoIntro />
         <EffectinoBenefits />
-        <EffectinoLongDesc />
-        <EffectinoPricing />
         <EffectinoFlowChart />
         <EffectinoComment />
+        <EffectinoLongDesc />
+        <!-- <EffectinoPricing /> -->
         <EffectinoFAQ />
     </main>
 

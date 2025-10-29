@@ -1,3 +1,9 @@
+<script lang="ts">
+    import arrow from '$lib/assets/arrow-right.png';
+    import number03 from '$lib/assets/03.png';
+    import img2022 from '$lib/assets/story/2022-image.png';
+</script>
+
 <div class="flex flex-col justify-between md:mt-[15vh] mb-[5vh] md:mb-[10vh]">
     <div class="flex flex-col justify-evenly w-full m-4 mb-20 md:flex-row">
         <div class="w-full text-[#05266A] mx-3 pb-14 relative md:w-2/5 mx-0">
@@ -8,8 +14,8 @@
         </div>
 
         <div class="flex flex-row mt-10 ml-4" >
-            <img src="/arrow-right.png" alt="arrow" class="max-h-10 md:max-h-20 w-auto mr-7">
-            <img src="/03.png" alt="03" class="max-h-10 md:max-h-20 w-auto mr-7">
+            <img src={arrow} alt="arrow" class="max-h-10 md:max-h-20 w-auto mr-7">
+            <img src={number03} alt="03" class="max-h-10 md:max-h-20 w-auto mr-7">
         </div>
     </div>
     <div class="flex flex-col justify-center m-4 items-center min-[1000px]:items-start gap-[5vw] text-[#05266A] min-[1000px]:flex-row md:gap-[10vw]">
@@ -27,8 +33,8 @@
         <div 
             class="w-1/1 flex order-2 justify-center md:block md:w-2/6 lg:w-2/7 overflow-hidden">
             <img 
-                src="/story/2022-image.png" 
-                alt=""
+                src={img2022} 
+                alt="2022"
                 class="w-9/10 sm:w-full h-auto object-contain rounded-lg shadow-lg"
                 >
         </div>

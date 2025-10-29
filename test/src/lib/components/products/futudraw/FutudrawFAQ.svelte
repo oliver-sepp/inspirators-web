@@ -1,5 +1,6 @@
 <script lang="ts">
   import { slide } from 'svelte/transition';
+  import checkmark from '$lib/assets/checkmark.png';
 
   // Define the FAQ type
   type FAQ = {
@@ -10,29 +11,29 @@
   // List of FAQ items
   const faqs: FAQ[] = [
     {
-      question: 'Can the Effectino app be used for individual or team work?',
+      question: 'If I want to read numbers and text from PDFs customers send me, but don’t want to create new drawings, can FutuDraw help?',
       answer:
-        'Yes — Effectino supports both. You can use it individually or in teams, depending on your factory setup and workflow.'
+        'Yes. FutuDraw includes several modules, and you can use only the AI-Interpretation Module, which reads and interprets data directly from PDFs sent by your customers or partners. It can recognize numbers (including handwritten ones), images, lines, and text, turning them into structured, usable data.'
     },
     {
-      question: 'Is Effectino software or hardware?',
+      question: 'Our customers send us many PDFs with detailed specifications and request price quotes. Can FutuDraw help us with that?',
       answer:
-        "Effectino is a software application that runs on tablets and mobile devices. If your device can open a news portal with images, it’s powerful enough for Effectino. Most devices from around €100 already meet the requirements."
+        "Absolutely. FutuDraw’s AI analysis module interprets and understands what is on your PDFs. You can then use the Chat Module to upload your PDFs and ask direct questions about the data inside them. We also offer a self-service configurator module, which you can introduce to your customers for faster and more accurate quotation workflows."
     },
     {
-      question: 'How do team leads track production progress in Effectino?',
+      question: 'How do I know if FutuDraw can help me with my technical documentation?',
       answer:
-        'Effectino offers a real-time dashboard that shows the status of all active and completed work orders. It compares actual vs. estimated time (ETA), and progress reports can even be shared with customers for full transparency.'
+        'The simplest way is to send us an example document, and our team will quickly review it and let you know how FutuDraw can best support your process.'
     },
     {
-      question: 'Does the Effectino app integrate with ERP systems?',
+      question: 'What is the difference between FutuDraw and ChatGPT or other generic AI tools?',
       answer:
-        'Yes — Effectino integrates directly with your ERP. All work orders are imported automatically into the app, eliminating manual data entry.'
+        'Unlike general AI chat systems, FutuDraw is built specifically for engineering and industrial documentation. \nIt is: \n--Private – your data is never shared with third parties. \n--Accurate – up to 95% precision in interpreting technical data. \n--Customized – configured for your specific use case and document types. \n--Integrated – easily connects with your existing workflow or ERP system for higher efficiency.'
     },
     {
-      question: 'Is the Effectino app available in multiple languages?',
+      question: 'Where is FutuDraw not a good fit?',
       answer:
-        'Absolutely. Effectino can be customized to support most major languages, making it ideal for international manufacturing teams.'
+        'FutuDraw is designed for technical and engineering applications, not for creative or artistic purposes. It focuses on data accuracy, structure, and automation, not imagination.'
     }
   ];
 
@@ -81,7 +82,30 @@
             <!-- Expandable answer -->
             {#if openIndex === i}
                 <div transition:slide class="mt-2 mb-4 max-w-8/10 text-[1.5rem] font-normal text-[var(--dark-blue)]">
+                  {#if faq.answer.includes('\n')}
+                    
+                    {#each faq.answer.split('\n') as paragraph}
+                      {#if paragraph.trim().startsWith('--')}
+                        <div class="flex flex-row mb-8 items-start md:mb-4">
+                            <img
+                            src={checkmark}
+            				alt="checkmark"
+            				class="w-6 object-contain mr-4 pt-1.5"
+          					/>
+          					<p>
+            					<b>
+              					{paragraph.replace('--', '').trim()}
+            					</b>
+          					</p>
+        				</div>
+                      {:else}
+                        <p class="mb-4">{paragraph}</p>
+                      {/if}
+                    {/each}
+                  {:else}
                     {faq.answer}
+            {/if}
+                  
                 </div>
             {/if}
         </div>

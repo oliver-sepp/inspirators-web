@@ -8,6 +8,7 @@ import FutudrawBenefits from '$lib/components/products/futudraw/FutudrawBenefits
 import FutudrawOnboarding from '$lib/components/products/futudraw/FutudrawOnboarding.svelte';
 import FutudrawUseCases from '$lib/components/products/futudraw/FutudrawUseCases.svelte';
 import FutudrawFAQ from '$lib/components/products/futudraw/FutudrawFAQ.svelte';
+import FutudrawBOM from '$lib/components/products/futudraw/FutudrawBOM.svelte';
 </script>
 
 <div class="min-h-screen w-full">
@@ -19,6 +20,7 @@ import FutudrawFAQ from '$lib/components/products/futudraw/FutudrawFAQ.svelte';
     <main class="w-full">
         <FutudrawIntro />
         <WhyFutudraw />
+        <FutudrawBOM />
         <FutudrawBenefits />
         <FutudrawOnboarding />
         <FutudrawUseCases />

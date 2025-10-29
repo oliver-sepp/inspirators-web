@@ -1,3 +1,9 @@
+<script lang="ts">
+    import arrow from '$lib/assets/arrow-right.png';
+    import number02 from '$lib/assets/02.png';
+    import AHK from '$lib/assets/member/member-image2.png';
+</script>
+
 <div class="flex flex-col justify-between md:mt-[15vh] mb-[10vh]">
     <div class="flex flex-col justify-evenly w-full m-4 mb-20 md:flex-row">
         <div class="w-full text-[#05266A] mx-3 pb-14 relative md:w-2/5 mx-0">
@@ -8,8 +14,8 @@
         </div>
 
         <div class="flex flex-row mt-10 ml-4" >
-            <img src="/arrow-right.png" alt="arrow" class="max-h-10 md:max-h-20 w-auto mr-7">
-            <img src="/02.png" alt="02" class="max-h-10 md:max-h-20 w-auto mr-7">
+            <img src={arrow} alt="arrow" class="max-h-10 md:max-h-20 w-auto mr-7">
+            <img src={number02} alt="02" class="max-h-10 md:max-h-20 w-auto mr-7">
         </div>
     </div>
     <div class="flex flex-col justify-center items-start gap-[10vw] text-[#05266A] md:flex-row gap-[5vw]">
@@ -22,8 +28,8 @@
 
         <div class="w-1/1 flex order-2 min-[1000px]:order-1 justify-center md:w-1/6 lg:w-2/7 overflow-hidden">
             <img 
-            src="/member/member-image2.png" 
-            alt=""
+            src={AHK}
+            alt="AHK"
             class="w-9/10 sm:w-full h-auto object-contain rounded-lg shadow-lg">
         </div>
         

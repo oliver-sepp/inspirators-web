@@ -1,6 +1,10 @@
 <script lang="ts">
-const lightSend = "effectino/send_light.svg";
-const darkSend = "effectino/send_dark.svg";
+import uiuxDesign from '$lib/assets/custom/uiux-design.svg';
+import systemArc from '$lib/assets/custom/system-arc.svg';
+import dev from '$lib/assets/custom/dev.svg';
+import devops from '$lib/assets/custom/devops.svg';
+import testing from '$lib/assets/custom/testing.svg';
+import support from '$lib/assets/custom/support.svg';
 </script>
 
 <div class="flex flex-col justify-between mt-[10vh] md:mt-[15vh]">
@@ -14,41 +18,41 @@ const darkSend = "effectino/send_dark.svg";
 
     </div>
     <div class="w-full flex flex-wrap justify-center gap-6 mb-20 px-4">
-    <div class="w-full sm:w-[calc(50%-0.75rem)] hover:bg-[var(--light-blue)] hover:text-[var(--dark-blue)] lg:w-[calc(33.333%-1rem)] xl:w-[calc(20%-1.2rem)] min-w-[380px] text-center text-[var(--dark-blue)] bg-white shadow-lg rounded-2xl flex flex-col justify-start gap-[2.5rem] items-center p-10 relative"
+    <div class="w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] xl:w-[calc(20%-1.2rem)] min-w-[380px] text-center text-[var(--dark-blue)] bg-white shadow-lg rounded-2xl flex flex-col justify-start gap-[2.5rem] items-center p-10 relative"
     >       
-        <img src="/custom/uiux-design.svg" alt="ui/ux" class="min-w-[100px]">
+        <img src={uiuxDesign} alt="ui/ux" class="min-w-[100px]">
 
         <h1 class="text-[2rem] lg:text-[2.4rem]">
             <b>UI/UX design</b>
         </h1>
     </div>
     <div class="w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] xl:w-[calc(20%-1.2rem)] min-w-[380px] text-center text-[var(--dark-blue)] bg-white shadow-lg rounded-2xl flex flex-col justify-start gap-[2.5rem] items-center p-10 relative">
-        <img src="/custom/system-arc.svg" alt="send" class="min-w-[100px]">
+        <img src={systemArc} alt="send" class="min-w-[100px]">
 
         <h1 class="text-[2rem] lg:text-[2.4rem]">
             <b>System architecture</b>
         </h1>
     </div>
     <div class="w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] xl:w-[calc(20%-1.2rem)] min-w-[380px] text-center text-[var(--dark-blue)] bg-white shadow-lg rounded-2xl flex flex-col justify-start gap-[2.5rem] items-center p-10 relative">
-        <img src="/custom/dev.svg" alt="send" class="min-w-[100px]">
+        <img src={dev} alt="send" class="min-w-[100px]">
         <h1 class="text-[2rem] lg:text-[2.4rem]">
             <b>Software development</b>
         </h1>
     </div>
     <div class="w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] xl:w-[calc(20%-1.2rem)] min-w-[380px] text-center text-[var(--dark-blue)] bg-white shadow-lg rounded-2xl flex flex-col justify-start gap-[2.5rem] items-center p-10 relative">
-        <img src="/custom/devops.svg" alt="send" class="min-w-[100px]">
+        <img src={devops} alt="send" class="min-w-[100px]">
         <h1 class="text-[2rem] lg:text-[2.4rem]">
             <b>DevOps, CI/CD</b>
         </h1>
     </div>
     <div class="w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] xl:w-[calc(20%-1.2rem)] min-w-[380px] text-center text-[var(--dark-blue)] bg-white shadow-lg rounded-2xl flex flex-col justify-start gap-[2.5rem] items-center p-10 relative">
-        <img src="/custom/testing.svg" alt="send" class="min-w-[100px]">
+        <img src={testing} alt="send" class="min-w-[100px]">
         <h1 class="text-[2rem] lg:text-[2.4rem]">
             <b>Testing</b>
         </h1>
     </div>
     <div class="w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] xl:w-[calc(20%-1.2rem)] min-w-[380px] text-center text-[var(--dark-blue)] bg-white shadow-lg rounded-2xl flex flex-col justify-start gap-[2.5rem] items-center p-10 relative">
-        <img src="/custom/support.svg" alt="send" class="min-w-[100px]">
+        <img src={support} alt="send" class="min-w-[100px]">
         <h1 class="text-[2rem] lg:text-[2.4rem]">
             <b>Second-line support</b>
         </h1>

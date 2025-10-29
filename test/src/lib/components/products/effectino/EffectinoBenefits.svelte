@@ -1,6 +1,11 @@
+<script lang="ts">
+  import arrow from '$lib/assets/arrow-right.png';
+  import number01 from '$lib/assets/01.png';
+  import checkmark from '$lib/assets/checkmark.png';
+</script>
 <div class="flex flex-col md:mt-[15vh] mb-[5vh] md:mb-[10vh]">
-  <div class="flex flex-col justify-evenly w-full m-4 mb-20 md:flex-row">
-    <div class="w-full text-[#05266A] mx-3 pb-14 relative md:w-2/5 mx-0">
+  <div class="flex flex-col justify-evenly pl-5 lg:pl-0 w-full mb-20 md:flex-row">
+    <div class="w-full text-[#05266A] pb-14 relative md:w-2/5 mx-0">
       <h1 class="text-[3rem] md:text-[3rem] lg:text-[5rem] leading-tight">
         <b>Effectino - MES</b> 
       </h1>
@@ -13,12 +18,12 @@
 
     <div class="flex flex-row mt-10 ml-4">
       <img
-        src="/arrow-right.png"
+        src={arrow}
         alt="arrow"
         class="max-h-10 md:max-h-15 lg:max-h-20 w-auto mr-7"
       />
       <img
-        src="/01.png"
+        src={number01}
         alt="01"
         class="max-h-10 md:max-h-15 lg:max-h-20 w-auto mr-7"
       />
@@ -31,7 +36,7 @@
       <div class="text-[1.5rem] w-5/6 md:w-2/6">
         <div class="flex flex-row mb-8 items-start md:mb-4">
           <img
-            src="/checkmark.png"
+            src={checkmark}
             alt="checkmark"
             class="w-6 object-contain mr-4 pt-1.5"
           />
@@ -43,7 +48,7 @@
         </div>
         <div class="flex flex-row mb-8 items-start md:mb-4">
           <img
-            src="/checkmark.png"
+            src={checkmark}
             alt="checkmark"
             class="w-6 object-contain mr-4 pt-1.5"
           />
@@ -56,7 +61,7 @@
         </div>
         <div class="flex flex-row mb-8 items-start md:mb-4">
           <img
-            src="/checkmark.png"
+            src={checkmark}
             alt="checkmark"
             class="w-6 object-contain mr-4 pt-1.5"
           />
@@ -69,7 +74,7 @@
         </div>
         <div class="flex flex-row mb-8 items-start md:mb-4">
           <img
-            src="/checkmark.png"
+            src={checkmark}
             alt="checkmark"
             class="w-6 object-contain mr-4 pt-1.5"
           />

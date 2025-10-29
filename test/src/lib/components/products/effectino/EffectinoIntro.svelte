@@ -1,7 +1,8 @@
 <script lang="ts">
 import EffectinoVideo from "./EffectinoVideo.svelte";
+import playBtn from '$lib/assets/products/futudraw/play-video.svg';
 let showVideo= false;
-let videoSource = '/products/futudraw/FutuDraw-Animation.mp4';
+let videoSource = 'https://www.youtube.com/embed/Rdi5N6nYjw8';
 
 function openVideo() {
     showVideo = true;
@@ -34,7 +35,7 @@ function openVideo() {
         on:click={openVideo}
         class="bg-[var(--dark-blue)] z-49 text-white rounded-full px-10 py-6 mt-10 md:my-10 flex items-center text-[20px] whitespace-nowrap cursor-pointer hover:bg-blue-900 transition-all duration-300 ease-in-out">
             <img 
-            src="/products/futudraw/play-video.svg" 
+            src={playBtn} 
             alt="Play Video" 
             class="h-8 mr-2">
             <p>
@@ -45,7 +46,7 @@ function openVideo() {
 
     <div class="w-full text-center text-[24px] text-[var(--dark-blue)] mb-20 px-10 md:px-40 lg:px-60">
         <p>
-            The installation process is a breeze, with just one click needed to get started.
+            The installation process is easy - just one click needed to get started.
         </p>
     </div>
 

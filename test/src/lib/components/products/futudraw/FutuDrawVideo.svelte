@@ -11,10 +11,6 @@
     }
   }
 
-  function disableRightClick(event: MouseEvent) {
-		event.preventDefault();
-	}
-
 </script>
 
 <svelte:window on:keydown={handleKeydown} />
@@ -23,7 +19,7 @@
   <div class="fixed inset-0 z-50 flex items-center justify-center p-4">
     <!-- Backdrop as button -->
     <button
-      class="absolute inset-0 bg-black bg-opacity-75 cursor-default"
+      class="absolute inset-0 bg-black bg-opacity-50 cursor-default"
       on:click={onClose}
       aria-label="Close video overlay"
       type="button"
@@ -41,16 +37,14 @@
       </button>
       
       <div class="relative w-full aspect-video bg-black rounded-lg overflow-hidden">
-        <video
-          on:contextmenu={disableRightClick}
-          src={videoSrc}
-          controls
-          autoplay
+        <iframe
+          src={`${videoSrc}?autoplay=1&modestbranding=1&rel=0`}
           class="w-full h-full"
-        >
-          <track kind="captions" />
-          Your browser doesn't support video playback.
-        </video>
+          title="YouTube video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
   </div>

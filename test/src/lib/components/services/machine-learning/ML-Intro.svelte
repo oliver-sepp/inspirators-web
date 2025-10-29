@@ -1,3 +1,9 @@
+<script lang="ts">
+    import arrow from '$lib/assets/arrow-right.png';
+    import number01 from '$lib/assets/01.png';
+    import introImg from '$lib/assets/machine-learning/ML-1.png';
+</script>
+
 <div class="flex flex-col justify-between md:mt-[15vh] mb-[5vh] md:mb-[10vh]">
     <div class="flex flex-col justify-evenly w-full m-4 mb-20 md:flex-row">
         <div class="w-full text-[#05266A] mx-3 pb-14 relative md:w-2/5 mx-0">
@@ -8,8 +14,8 @@
         </div>
 
         <div class="flex flex-row mt-10 ml-4" >
-            <img src="/arrow-right.png" alt="arrow" class="max-h-10 md:max-h-15 lg:max-h-20 w-auto mr-7">
-            <img src="/01.png" alt="01" class="max-h-10 md:max-h-15 lg:max-h-20 w-auto mr-7">
+            <img src={arrow} alt="arrow" class="max-h-10 md:max-h-15 lg:max-h-20 w-auto mr-7">
+            <img src={number01} alt="01" class="max-h-10 md:max-h-15 lg:max-h-20 w-auto mr-7">
         </div>
     </div>
     <div class="flex flex-col justify-center items-center min-[1000px]:items-start md:gap-[10vw] text-[#05266A] min-[1000px]:flex-row gap-[5vw]">
@@ -25,7 +31,7 @@
 
         <div class="w-1/1 flex justify-center items-start md:block md:w-2/6 lg:w-2/7 overflow-hidden">
             <img 
-            src="/machine-learning/ML-1.png" 
+            src={introImg} 
             alt=""
             class="w-9/10 sm:w-full h-auto object-contain rounded-lg shadow-lg">
         </div>

@@ -1,6 +1,9 @@
-<!-- <script lang="ts">
-const lightSend = "effectino/send_light.svg";
-const darkSend = "effectino/send_dark.svg";
+<script lang="ts">
+import send from '$lib/assets/products/effectino/send_light.svg';
+import click from '$lib/assets/products/effectino/click_light.svg';
+import edit_document from '$lib/assets/products/effectino/edit_document_light.svg';
+import monitoring from '$lib/assets/products/effectino/monitoring_light.svg';
+import bar_chart from '$lib/assets/products/effectino/bar_chart_light.svg';
 </script>
 
 <div class="flex flex-col justify-between mt-[10vh] md:mt-[15vh]">
@@ -19,7 +22,7 @@ const darkSend = "effectino/send_dark.svg";
         <h1 class="text-[2rem] lg:text-[2.4rem] w-full text-letf">
             <b><i>01</i></b>
         </h1>        
-        <img src="effectino/send_light.svg" alt="send" class="min-w-[100px]">
+        <img src={send} alt="send" class="min-w-[100px]">
 
         <h1 class="text-[2rem] lg:text-[2.4rem]">
             <b>Order arrives in the Effectino app</b>
@@ -32,7 +35,7 @@ const darkSend = "effectino/send_dark.svg";
         <h1 class="text-[2rem] lg:text-[2.4rem] w-full text-left">
             <b><i>02</i></b>
         </h1>
-        <img src="effectino/click_light.svg" alt="send" class="min-w-[100px]">
+        <img src={click} alt="send" class="min-w-[100px]">
 
         <h1 class="text-[2rem] lg:text-[2.4rem]">
             <b>Employees select work from the app</b>
@@ -45,7 +48,7 @@ const darkSend = "effectino/send_dark.svg";
         <h1 class="text-[2rem] lg:text-[2.4rem] w-full text-left">
             <b><i>03</i></b>
         </h1>
-        <img src="effectino/edit_document_light.svg" alt="send" class="min-w-[100px]">
+        <img src={edit_document} alt="send" class="min-w-[100px]">
         <h1 class="text-[2rem] lg:text-[2.4rem]">
             <b>Work logging (pauses, quantities, completion, etc.)</b>
         </h1>
@@ -57,7 +60,7 @@ const darkSend = "effectino/send_dark.svg";
         <h1 class="text-[2rem] lg:text-[2.4rem] w-full text-left">
             <b><i>04</i></b>
         </h1>
-        <img src="effectino/monitoring_light.svg" alt="send" class="min-w-[100px]">
+        <img src={monitoring} alt="send" class="min-w-[100px]">
         <h1 class="text-[2rem] lg:text-[2.4rem]">
             <b>Dashboard & analytics</b>
         </h1>
@@ -69,7 +72,7 @@ const darkSend = "effectino/send_dark.svg";
         <h1 class="text-[2rem] lg:text-[2.4rem] w-full text-left">
             <b><i>05</i></b>
         </h1>
-        <img src="effectino/bar_chart_light.svg" alt="send" class="min-w-[100px]">
+        <img src={bar_chart} alt="send" class="min-w-[100px]">
         <h1 class="text-[2rem] lg:text-[2.4rem]">
             <b>Data sent to Power BI</b>
         </h1>
@@ -79,7 +82,11 @@ const darkSend = "effectino/send_dark.svg";
     </div>
 </div>
 
-</div> -->
+</div>
+
+<!-- <script lang="ts">
+import processflow from '$lib/assets/products/effectino/processflow.png';
+</script>
 
 <div class="flex flex-col justify-center items-center mt-20">
     <div class="flex flex-row justify-center align-center w-full mb-20">
@@ -125,8 +132,8 @@ const darkSend = "effectino/send_dark.svg";
             </div>            
         </div>
         <div class="bg-transparent p-10 w-fit rounded-xl">
-            <img src="effectino/processflow.png" alt="process flow">
+            <img src={processflow} alt="process flow">
         </div>
     </div>
     
-</div>
+</div> -->

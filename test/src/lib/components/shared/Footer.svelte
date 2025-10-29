@@ -1,7 +1,16 @@
+<script lang="ts">
+  import logo from '$lib/assets/logo.png';
+
+  const user = 'info';
+  const domain = 'inspirators';
+  const tld = 'eu';
+  const email = `${user}@${domain}.${tld}`;
+</script>
+
 <div class="bg-white p-6 w-full text-[#05266A]">
 
     <div class="flex items-start mb-6">
-        <img src="/logo.png" alt="Inspirators Logo" class="h-12 w-auto">
+        <img src={logo} alt="Inspirators Logo" class="h-12 w-auto">
     </div>
 
   <div class="flex flex-col md:flex-row md:justify-left gap-[16vw]">
@@ -17,7 +26,7 @@
     <div class="flex flex-col space-y-2">
       <p>Contact Us</p>
       <p>Contact Form</p>
-      <a href="mailto:info@inspirators.eu?subject=Contact request" target="_blank" class="hover:underline">info@inspirators.eu</a>
+      <a href={`mailto:${email}`} target="_blank" class="hover:underline">{email}</a>
     </div>
 
     <div class="flex flex-col space-y-2">

@@ -1,28 +1,27 @@
 [
   {
     "Products": {
-      "FutuDraw": "/products/futudraw",
-      "Effectino": "/products/effectino"
+      "FutuDraw": "products/futudraw",
+      "Effectino": "products/effectino"
     },
     "Services": {
-      "Custom Software": "/services/custom",
-      "AI-Assisted Analysis": "/services/analysis",
-      "AI and Machine Learning": "/services/machine-learning"
+      "Custom Software": "services/custom",
+      "AI-Assisted Analysis": "services/analysis",
+      "AI and Machine Learning": "services/machine-learning"
     },
     "Industries": {
-      "Factories, Production": "/industries/production",
-      "Energy, Utilities": "/industries/energy-util",
-      "Building Sector": "/industries/building"
+      "Factories, Production": "industries/production",
+      "Energy, Utilities": "industries/energy-util",
+      "Building Sector": "industries/building"
     },
     "Partners": {
-      "We represent": "/partners/represent",
-      "We work with": "/partners/partners",
-      "We are member of": "/partners/member"
+      "We work with": "partners/partners",
+      "We are member of": "partners/member"
     },
     "About": {
-      "Story": "/about/inspirators",
-      "Team": "/about/team",
-      "Values": "/about/core-values"
+      "Story": "about/inspirators",
+      "Team": "about/team",
+      "Values": "about/core-values"
     }
   }
 ]

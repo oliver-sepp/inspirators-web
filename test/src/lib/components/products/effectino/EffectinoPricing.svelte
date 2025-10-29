@@ -1,4 +1,27 @@
-<div class="tere overflow-hidden">
+<script lang="ts">
+  import { onMount } from 'svelte';
+
+  import arrow from '$lib/assets/arrow-right-white.png';
+  import number03 from '$lib/assets/03-white.png';
+  import checkmark from '$lib/assets/checkmark.png';
+
+  let smallCard: HTMLDivElement;
+  let bigCard: HTMLDivElement;
+
+onMount(() => {
+  const syncHeights = () => {
+    smallCard.style.height = `${bigCard.clientHeight}px`;
+  };
+
+  syncHeights();
+  window.addEventListener('resize', syncHeights);
+
+  return () => window.removeEventListener('resize', syncHeights);
+});
+
+</script>
+
+<div class="tere">
 
 
 
@@ -16,40 +39,42 @@
 
     	<div class="flex flex-row mt-10 ml-4">
       		<img
-        	src="/arrow-right-white.png"
+        	src={arrow}
         	alt="arrow"
         	class="max-h-10 md:max-h-15 lg:max-h-20 w-auto mr-7"
       		/>
       		<img
-        	src="/03-white.png"
-        	alt="01"
+        	src={number03}
+        	alt="03"
         	class="max-h-10 md:max-h-15 lg:max-h-20 w-auto mr-7"
       		/>
     	</div>
   	</div>
-  	<div class="flex flex-col lg:flex-row gap-8 absolute bottom-0 translate-y-1/2 items-center">
+  	<div 
+	bind:this={smallCard}
+	class="small-card flex flex-col lg:flex-row gap-8 absolute text-[1rem] md:text-[1.5rem] xl:text-[2rem] bottom-0 translate-y-1/2 items-center">
     	<div class="w-9/10 lg:w-[30vw] h-fit lg:min-h-[60rem] lg:max-h-screen text-[var(--dark-blue)] bg-white shadow-lg flex flex-col justify-start gap-[2.5rem] items-left p-10">
 			<div class="flex items-center min-h-[150px] lg:min-h-[200px] border-b-4 border-[var(--light-blue)]">
-				<h1 class="text-[1.4rem] lg:text-[2.5rem] nowrap">
+				<h1 class="text-[1.4rem] md:text-[1.7rem] xl:text-[2.5rem] nowrap">
 					<b>Effectino App — <br>Simple. Smart. Efficient.</b>
 				</h1>
 			</div>
 			
-			<div class="flex flex-row items-start text-[1rem] lg:text-[2rem]">
+			<div class="flex flex-row items-start">
           		<img
-            	src="/checkmark.png"
+            	src={checkmark}
             	alt="checkmark"
-            	class="w-10 object-contain mr-4 mt-4"
+            	class="w-6 lg:w-10 object-contain mt-2 mr-4 lg:mt-4"
           		/>
           		<p>
               		Select work directly from the app — choose prioritized tasks instantly.	
           		</p>
         	</div>
-			<div class="flex flex-row items-start text-[1rem] lg:text-[2rem]">
+			<div class="flex flex-row items-start">
           		<img
-            	src="/checkmark.png"
+            	src={checkmark}
             	alt="checkmark"
-            	class="w-10 object-contain mr-4 mt-4"
+            	class="w-6 lg:w-10 object-contain mt-2 mr-4 lg:mt-4"
           		/>
           		<p>
             		
@@ -57,11 +82,11 @@
             		
           		</p>
         	</div>
-			<div class="flex flex-row items-start text-[1rem] lg:text-[2rem]">
+			<div class="flex flex-row items-start">
           		<img
-            	src="/checkmark.png"
+            	src={checkmark}
             	alt="checkmark"
-            	class="w-10 object-contain mr-4 mt-4"
+            	class="w-6 lg:w-10 object-contain mt-2 mr-4 lg:mt-4"
           		/>
           		<p>
             		
@@ -70,18 +95,20 @@
           		</p>
         	</div>
 		</div>
-    	<div class="w-9/10 lg:w-[30vw] h-fit lg:min-h-[60rem] lg:max-h-screen bg-white text-[1rem] xl:text-[2rem] shadow-lg text-[var(--dark-blue)] p-10 flex flex-col justify-start gap-[2.5rem] items-left">
+    	<div
+		bind:this={bigCard} 
+		class="big-card w-9/10 lg:w-[30vw] h-fit lg:min-h-[60rem] lg:max-h-screen bg-white text-[1rem] md:text-[1.5rem] xl:text-[2rem] shadow-lg text-[var(--dark-blue)] p-10 flex flex-col justify-start gap-[2.5rem] items-left">
 			<div class="min-h-[150px] lg:min-h-[200px] border-b-4 flex items-center border-[var(--light-blue)]">
-				<h1 class="text-[1.4rem] lg:text-[2.5rem]">
+				<h1 class="text-[1.4rem] md:text-[1.7rem] xl:text-[2.5rem] nowrap">
 				<b>Effectino Dashboard — <br>Dashboards & Analytics</b>
 			</h1>
 			</div>
 			
 			<div class="flex flex-row items-start">
           		<img
-            	src="/checkmark.png"
+            	src={checkmark}
             	alt="checkmark"
-            	class="w-10 object-contain mr-4 mt-4"
+            	class="w-6 lg:w-10 object-contain mt-2 mr-4 lg:mt-4"
           		/>
           		<p>
             		
@@ -91,9 +118,9 @@
         	</div>
 			<div class="flex flex-row items-start">
           		<img
-            	src="/checkmark.png"
+            	src={checkmark}
             	alt="checkmark"
-            	class="w-10 object-contain mr-4 mt-4"
+            	class="w-6 lg:w-10 object-contain mt-2 mr-4 lg:mt-4"
           		/>
           		<p>
             		
@@ -103,9 +130,9 @@
         	</div>
 			<div class="flex flex-row items-start">
           		<img
-            	src="/checkmark.png"
+            	src={checkmark}
             	alt="checkmark"
-            	class="w-10 object-contain mr-4 mt-4"
+            	class="w-6 lg:w-10 object-contain mt-2 mr-4 lg:mt-4"
           		/>
           		<p>
             		

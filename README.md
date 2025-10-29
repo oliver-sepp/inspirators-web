@@ -1,7 +1,7 @@
 # Inspirators
 Inspirators! new website design implementation.
 
-# How to run
+# How to run locally
 
 1. Navigate to test folder.
 2. Run "npm install" to install dependencies.

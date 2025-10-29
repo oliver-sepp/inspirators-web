@@ -2,7 +2,14 @@
   import { onMount } from "svelte";
   import LanguagePopUp from "./LanguagePopUp.svelte";
   import Links from "../../navbar-options/links.json";
-import { goto } from '$app/navigation';
+  import { base } from '$app/paths';
+  import logo from '$lib/assets/logo.png';
+  import langBtn from '$lib/assets/lang-switch-btn.png';
+
+  const user = 'info';
+  const domain = 'inspirators';
+  const tld = 'eu';
+  const email = `${user}@${domain}.${tld}`;
 
   const menuData = Links[0];
 
@@ -56,34 +63,19 @@ import { goto } from '$app/navigation';
       }
     };
   }
-
-  function clickOutsideMobile(node: HTMLElement) {
-    const handleClick = (event: MouseEvent) => {
-      if (!node.contains(event.target as Node)) {
-        menuOpen = false;
-      }
-    };
-
-    document.addEventListener("click", handleClick, true);
-
-    return {
-      destroy() {
-        document.removeEventListener("click", handleClick, true);
-      }
-    };
-  }
+  
 </script>
 
 <div
   id="navigation"
-  class="fixed top-0 bg-transparent flex items-center justify-between px-3 sm:px-8 lg:px-10 z-[50] py-1 sm:py-6 lg:py-10 pb-3 sm:pb-4 lg:pb-6 w-[100vw]"
+  class="fixed top-0 bg-transparent flex items-center justify-between px-3 sm:px-8 lg:px-10 z-[50] py-1 sm:py-6 lg:py-10 pb-3 sm:pb-4 lg:pb-6 w-full"
   class:bg-transparent={!scrolled && !menuOpen}
   class:bg-white={scrolled || menuOpen}
   style="min-height: 60px;"
 >
   <div class="flex-shrink-0">
     <a href="../.">
-      <img src="/logo.png" alt="Inspirators Logo" class="h-6 sm:h-10 lg:h-12 w-auto" />
+      <img src={logo} alt="Inspirators Logo" class="h-6 sm:h-10 lg:h-12 w-auto" />
     </a>
   </div>
 
@@ -115,13 +107,8 @@ import { goto } from '$app/navigation';
 		  	{@const category = link as keyof typeof menuData}
   			{@const url = menuData[category][item as keyof typeof menuData[typeof category]]}
             <a 
-              href={url}
+              href={`${base}/${url}`}
               class="submenu-item block py-2 rounded-md text-[1.2rem] px-4 hover:bg-[var(--light-blue)] text-[var(--dark-blue)] whitespace-nowrap"
-			  on:click={(e) => {
-				e.preventDefault();
-				e.stopPropagation(); 
-				goto(url); 
-				}}
             >
               {item}
             </a> 
@@ -134,7 +121,7 @@ import { goto } from '$app/navigation';
 
     <div class="flex items-center gap-[clamp(0.5rem, 2vw, 2rem)] ml-1 lg:ml-0">
       <a
-        href="mailto:info@inspirators.eu?subject=Contact Request"
+        href={`mailto:${email}`}
         target="_blank"
         class="text-[12px] lg:text-[17px] xl:text-[20px] text-[var(--dark-blue)] mr-3 py-2 px-4 lg:px-14 lg:py-4 lg:py-4 bg-[var(--light-blue)] rounded-full hover:bg-[#05266A] hover:text-[#7FC8CB] transition-all duration-400 ease-in-out whitespace-nowrap min-w-fit"
         >Get in touch</a
@@ -148,7 +135,7 @@ import { goto } from '$app/navigation';
           on:click={() => (languagePopUpOpen = !languagePopUpOpen)}
         >
           <img
-            src="/lang-switch-btn.png"
+            src={langBtn}
             alt="Language switch"
             class="h-6 lg:h-8 w-auto"
           />
@@ -200,16 +187,10 @@ import { goto } from '$app/navigation';
 		  	{@const category = link as keyof typeof menuData}
   			{@const url = menuData[category][item as keyof typeof menuData[typeof category]]}
             <a 
-              href={url}
-              class="submenu-item block py-2 rounded-md px-4 hover:bg-[#7FC8CD] text-[#05266A] whitespace-nowrap"
-			  on:click={(e) => {
-				e.preventDefault();
-				menuOpen = false;
-				subMenuOpen = false;
-				active = ""; 
-				goto(url); 
-				}}
-            >
+              href={`${base}/${url}`}
+              on:click={() => (menuOpen = false)}
+              on:click={() => (subMenuOpen = false)}
+              class="submenu-item block py-2 rounded-md px-4 hover:bg-[#7FC8CD] text-[#05266A] whitespace-nowrap">
               {item}
             </a> 
           {/each}
@@ -219,7 +200,7 @@ import { goto } from '$app/navigation';
     {/each}
 
     <a
-      href="."
+      href={`mailto:${email}`}
       class="block text-lg font-medium px-4 mb-3 py-2 bg-[#7FC8CB] rounded-lg hover:bg-[#05266A] hover:text-[#7FC8CB] transition"
       on:click={() => (menuOpen = false)}
     >
@@ -232,7 +213,7 @@ import { goto } from '$app/navigation';
     on:click={() => (languagePopUpOpen = !languagePopUpOpen)}
   >
     <img
-      src="/lang-switch-btn.png"
+      src={langBtn}
       alt="Language switch"
       class="h-8 w-auto"
     />
