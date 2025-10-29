@@ -36,7 +36,7 @@
             <img 
             src={DataBricks} 
             alt="Databricks"
-            class="w-9/10 sm:w-full h-auto object-contain rounded-lg shadow-lg">
+            class="w-9/10 sm:w-full h-auto object-contain rounded-lg">
         </div>
         
     </div>
