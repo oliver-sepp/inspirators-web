@@ -18,6 +18,7 @@ const config = {
     paths: {
       base: dev ? '' : '/inspirators-web',
     },
+    appDir: 'internal',
   },
 };
 
