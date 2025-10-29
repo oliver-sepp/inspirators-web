@@ -11,8 +11,8 @@ const config = {
     adapter: adapter({
       pages: 'build',
       assets: 'build',
-      fallback: undefined,
-	  strict: false,
+      fallback: '404.html',
+	    strict: false,
     }),
     paths: {
       base: dev ? '' : '/inspirators-web',
