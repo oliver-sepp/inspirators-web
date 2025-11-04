@@ -31,8 +31,8 @@
   });
 </script>
 
-<div class="flex flex-col md:flex-row flex-wrap justify-center w-screen sm:w-full md:mt-[15vh] px-10 gap-[2rem] text-[var(--dark-blue)] pb-20">
-    <div class="w-full md:w-1/4 flex flex-col justify-start">
+<div class="flex flex-col min-[1000px]:flex-row flex-wrap justify-center w-screen sm:w-full min-[1000px]:mt-[15vh] px-10 gap-[2rem] text-[var(--dark-blue)] pb-20">
+    <div class="w-full min-[1000px]:w-1/4 flex flex-col justify-start">
         <div class="w-full border-b-3 pb-5 border-[var(--light-blue)] mb-10"
         id="kitchen">
             <img class="h-[100px]" src={kitchen} alt="Kitchen">
@@ -40,7 +40,7 @@
                 <b>FutuDraw for Kitchen Canopy Configuration</b>
             </h1>
         </div>
-        <div class="flex flex-col w-full">
+        <div class="flex flex-col w-full text-[1.2rem]">
             <div class="flex flex-row mb-8 items-start md:mb-4">
                 <img src={checkmark} alt="checkmark" class="w-6 object-contain mr-4 pt-1.5">
                 <p>
@@ -61,7 +61,7 @@
             </div>
         </div>
     </div>
-    <div class="w-full md:w-1/4 flex flex-col justify-start">
+    <div class="w-full min-[1000px]:w-1/4 flex flex-col justify-start">
         <div class="w-full border-b-3 pb-5 border-[var(--light-blue)] mb-10"
         id="heat-pump">
             <img class="h-[100px]" src={heatPump} alt="Kitchen">
@@ -69,7 +69,7 @@
                 <b>Heat Pump Selection for New or Renovated Private Houses</b>
             </h1>
         </div>
-        <div class="flex flex-col w-full">
+        <div class="flex flex-col w-full text-[1.2rem]">
             <div class="flex flex-row mb-8 items-start md:mb-4">
                 <img src={checkmark} alt="checkmark" class="w-6 object-contain mr-4 pt-1.5">
                 <p>
@@ -90,7 +90,7 @@
             </div>
         </div>
     </div>
-    <div class="w-full md:w-1/4 flex flex-col justify-start">
+    <div class="w-full min-[1000px]:w-1/4 flex flex-col justify-start">
         <div class="w-full border-b-3 pb-5 border-[var(--light-blue)] mb-10"
         id="chip">
             <img class="h-[100px]" src={chip} alt="Kitchen">
@@ -98,7 +98,7 @@
                 <b>Electrical Schematics Automation for Ships</b>
             </h1>
         </div>
-        <div class="flex flex-col w-full">
+        <div class="flex flex-col w-full text-[1.2rem]">
             <div class="flex flex-row mb-8 items-start md:mb-4">
                 <img src={checkmark} alt="checkmark" class="w-6 object-contain mr-4 pt-1.5">
                 <p>

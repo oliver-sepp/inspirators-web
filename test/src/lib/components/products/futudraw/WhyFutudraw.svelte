@@ -7,7 +7,7 @@
 </script>
 
 <div class="flex flex-col justify-between md:mt-[15vh]">
-    <div class="flex flex-col justify-evenly w-full pl-5 lg:pl-0 m-4 mb-20 md:flex-row">
+    <div class="flex flex-col justify-evenly w-full lg:pl-0 m-4 mb-20 md:flex-row">
         <div class="w-full text-[#05266A] pb-14 relative md:w-2/5 mx-0">
             <h1 class="text-[3rem] md:text-[3rem] lg:text-[5rem]">
                 <b>Why FutuDraw?</b>

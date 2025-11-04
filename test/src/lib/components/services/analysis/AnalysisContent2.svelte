@@ -8,7 +8,7 @@
 <div class="flex flex-col justify-evely mt-40 mb-20">
     <div class="flex flex-col justify-evenly w-full m-4 mb-20 md:flex-row">
         <div class="w-full text-[#05266A] pb-14 relative ml-5 md:w-2/5">
-            <h1 class="w-9/10 text-[3rem] md:text-[3rem] lg:text-[5rem]">
+            <h1 class="w-9/10 text-[3rem] md:text-[4rem] lg:text-[3rem]">
                 This service is ideal for companies that:
             </h1>
             <span class="absolute bottom-0 left-0 w-1/2 border-b-4 border-[#7FC8CB]"></span>

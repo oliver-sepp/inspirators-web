@@ -1,6 +1,6 @@
 <div class="flex flex-col text-[3.5vw] bg-gray-100 text-[#05266A] md:text-[1rem]">
   <button class="submenu-item rounded-md p-2 hover:bg-[#7FC8CB]">English</button>
-  <button class="submenu-item rounded-md p-2 hover:bg-[#7FC8CB]">Deutch</button>
+  <button class="submenu-item rounded-md p-2 hover:bg-[#7FC8CB]">Deutsch</button>
 </div>
 
 <style>

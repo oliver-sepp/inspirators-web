@@ -2,13 +2,13 @@
     import arrow from '$lib/assets/arrow-right.png';
     import number02 from '$lib/assets/02.png';
     import checkmark from '$lib/assets/checkmark.png';
-    import Partners from '$lib/assets/partners/3partners.png';
+    import Partners from '$lib/assets/pmain/partners/3partners.png';
 </script>
 
 <div class="flex flex-col justify-between md:mt-[15vh] mb-[10vh]">
     <div class="flex flex-col justify-evenly w-full m-4 mb-20 md:flex-row">
-        <div class="w-full text-[#05266A] mx-3 pb-14 relative md:w-2/5 mx-0">
-            <h1 class="text-[5vh] md:text-[8vh] lg:text-[8vh]">
+        <div class="w-9/10 text-[#05266A] mx-3 pb-14 relative md:w-2/5 mx-0">
+            <h1 class="text-[3rem] md:text-[4rem] lg:text-[3rem]">
                 Partners in Estonia
             </h1>
             <span class="absolute bottom-0 left-0 w-1/2 border-b-4 border-[#7FC8CB]"></span>

@@ -1,7 +1,7 @@
 <script lang="ts">
     import arrow from '$lib/assets/arrow-right.png';
     import number03 from '$lib/assets/03.png';
-    import img2022 from '$lib/assets/story/2022-image.png';
+    import img2022 from '$lib/assets/about/story/2022-image.png';
 </script>
 
 <div class="flex flex-col justify-between md:mt-[15vh] mb-[5vh] md:mb-[10vh]">

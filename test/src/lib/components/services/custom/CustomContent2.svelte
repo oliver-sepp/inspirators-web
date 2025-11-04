@@ -2,7 +2,7 @@
 import arrow from '$lib/assets/arrow-right.png';
 import number02 from '$lib/assets/02.png';
 import checkmark from '$lib/assets/checkmark.png';
-import customImage from '$lib/assets/custom/custom-2.png';
+import customImage from '$lib/assets/services/custom/custom-2.png';
 </script>
 
 <div class="flex flex-col justify-between md:mt-[15vh] mb-[5vh] md:mb-[10vh]">

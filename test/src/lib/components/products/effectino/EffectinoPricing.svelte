@@ -8,142 +8,154 @@
   let smallCard: HTMLDivElement;
   let bigCard: HTMLDivElement;
 
-onMount(() => {
-  const syncHeights = () => {
-    smallCard.style.height = `${bigCard.clientHeight}px`;
-  };
+  onMount(() => {
+    const syncHeights = () => {
+      if (window.innerWidth >= 1024) {
+        smallCard.style.height = `${bigCard.offsetHeight}px`;
+      } else {
+        smallCard.style.height = 'auto';
+      }
+    };
 
-  syncHeights();
-  window.addEventListener('resize', syncHeights);
+    syncHeights();
+    window.addEventListener('resize', syncHeights);
 
-  return () => window.removeEventListener('resize', syncHeights);
-});
-
+    return () => window.removeEventListener('resize', syncHeights);
+  });
 </script>
 
-<div class="tere">
+<div class="w-full">
+  <!-- Blue Section -->
+  <div class="bg-[var(--light-blue)]">
+    <!-- Header Section -->
+    <div class="w-full mx-auto px-6 pt-20 pb-8 lg:pb-40">
+      <div class="flex flex-col md:flex-row justify-evenly items-start w-full md:items-center gap-8">
+        <div class="relative pb-6 md:w-2/5">
+          <h1 class="text-[3rem] md:text-[3rem] lg:text-[5rem] leading-tight text-[var(--dark-blue)]">
+            <b>Effectino modules</b>
+          </h1>
+          <div class="absolute bottom-0 left-0 w-1/2 border-b-4 border-white"></div>
+        </div>
+        
+        <div class="flex items-center gap-6">
+          <img 
+            src={arrow}
+            alt="arrow" 
+            class="max-h-10 md:max-h-15 lg:max-h-20 w-auto mr-7"
+          />
+          <img 
+            src={number03}
+            alt="03" 
+            class="max-h-10 md:max-h-15 lg:max-h-20 w-auto mr-7"
+          />
+        </div>
+      </div>
+    </div>
 
+    <!-- Cards Section - Inside blue on mobile, overlapping on desktop -->
+    <div class="max-w-7xl mx-auto px-6 pb-20 lg:pb-0">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:-mb-80">
+        
+        <!-- Card 1 - Effectino App -->
+        <div 
+          bind:this={smallCard}
+          class="bg-white rounded-lg shadow-2xl p-8 md:p-12"
+        >
+          <div class="pb-6 mb-8 border-b-4 border-[var(--light-blue)] min-h-[140px] md:min-h-[160px] lg:min-h-[180px] flex items-end">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-[#05266A] leading-tight">
+              Effectino App —<br />
+              Simple. Smart. Efficient.
+            </h2>
+          </div>
+          
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <img 
+                src={checkmark}
+                alt="checkmark" 
+                class="w-6 object-contain flex-shrink-0 mt-1"
+              />
+              <p class="text-lg md:text-xl text-[#05266A]">
+                Select work directly from the app — choose prioritized tasks instantly.
+              </p>
+            </div>
+            
+            <div class="flex items-start gap-4">
+              <img 
+                src={checkmark}
+                alt="checkmark" 
+                class="w-6 object-contain flex-shrink-0 mt-1"
+              />
+              <p class="text-lg md:text-xl text-[#05266A]">
+                Log your work easily — record pauses, quantities, and completion in real time.
+              </p>
+            </div>
+            
+            <div class="flex items-start gap-4">
+              <img 
+                src={checkmark}
+                alt="checkmark" 
+                class="w-6 object-contain flex-shrink-0 mt-1"
+              />
+              <p class="text-lg md:text-xl text-[#05266A]">
+                Track progress at a glance — see live updates on orders and productivity.
+              </p>
+            </div>
+          </div>
+        </div>
 
+        <!-- Card 2 - Effectino Dashboard -->
+        <div 
+          bind:this={bigCard}
+          class="bg-white rounded-lg shadow-2xl p-8 md:p-12"
+        >
+          <div class="pb-6 mb-8 border-b-4 border-[var(--light-blue)] min-h-[140px] md:min-h-[160px] lg:min-h-[180px] flex items-end">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-[#05266A] leading-tight">
+              Effectino Dashboard —<br />
+              Dashboards & Analytics
+            </h2>
+          </div>
+          
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <img 
+                src={checkmark}
+                alt="checkmark" 
+                class="w-6 object-contain flex-shrink-0 mt-1"
+              />
+              <p class="text-lg md:text-xl text-[#05266A]">
+                Real-time visibility: Factory monitors and team lead dashboards display live order progress — completed work, ongoing tasks, and ETA vs. actual performance.
+              </p>
+            </div>
+            
+            <div class="flex items-start gap-4">
+              <img 
+                src={checkmark}
+                alt="checkmark" 
+                class="w-6 object-contain flex-shrink-0 mt-1"
+              />
+              <p class="text-lg md:text-xl text-[#05266A]">
+                Performance insights: Track productivity by employees or teams to identify bottlenecks and improve efficiency.
+              </p>
+            </div>
+            
+            <div class="flex items-start gap-4">
+              <img 
+                src={checkmark}
+                alt="checkmark" 
+                class="w-6 object-contain flex-shrink-0 mt-1"
+              />
+              <p class="text-lg md:text-xl text-[#05266A]">
+                Transparent operations: Gain a clear overview of the entire production floor — from individual tasks to overall output.
+              </p>
+            </div>
+          </div>
+        </div>
 
-<div
-  class="relative flex justify-center items-start overflow-visible md:mt-[15vh] bg-[var(--light-blue)] min-h-[110vh] lg:min-h-[70vh] pt-20"
->
-  	<div class="flex flex-col justify-evenly w-full m-4 mb-20 md:flex-row">
-    	<div class="w-full text-[#05266A] mx-3 pb-14 relative md:w-2/5 mx-0">
-      		<h1 class="text-[3rem] md:text-[3rem] lg:text-[5rem] leading-tight">
-        	<b>Effectino modules</b>
-      		</h1>
-      		<span class="absolute bottom-0 left-0 w-1/2 border-b-4 border-white"
-      		></span>
-    	</div>
+      </div>
+    </div>
+  </div>
 
-    	<div class="flex flex-row mt-10 ml-4">
-      		<img
-        	src={arrow}
-        	alt="arrow"
-        	class="max-h-10 md:max-h-15 lg:max-h-20 w-auto mr-7"
-      		/>
-      		<img
-        	src={number03}
-        	alt="03"
-        	class="max-h-10 md:max-h-15 lg:max-h-20 w-auto mr-7"
-      		/>
-    	</div>
-  	</div>
-  	<div 
-	bind:this={smallCard}
-	class="small-card flex flex-col lg:flex-row gap-8 absolute text-[1rem] md:text-[1.5rem] xl:text-[2rem] bottom-0 translate-y-1/2 items-center">
-    	<div class="w-9/10 lg:w-[30vw] h-fit lg:min-h-[60rem] lg:max-h-screen text-[var(--dark-blue)] bg-white shadow-lg flex flex-col justify-start gap-[2.5rem] items-left p-10">
-			<div class="flex items-center min-h-[150px] lg:min-h-[200px] border-b-4 border-[var(--light-blue)]">
-				<h1 class="text-[1.4rem] md:text-[1.7rem] xl:text-[2.5rem] nowrap">
-					<b>Effectino App — <br>Simple. Smart. Efficient.</b>
-				</h1>
-			</div>
-			
-			<div class="flex flex-row items-start">
-          		<img
-            	src={checkmark}
-            	alt="checkmark"
-            	class="w-6 lg:w-10 object-contain mt-2 mr-4 lg:mt-4"
-          		/>
-          		<p>
-              		Select work directly from the app — choose prioritized tasks instantly.	
-          		</p>
-        	</div>
-			<div class="flex flex-row items-start">
-          		<img
-            	src={checkmark}
-            	alt="checkmark"
-            	class="w-6 lg:w-10 object-contain mt-2 mr-4 lg:mt-4"
-          		/>
-          		<p>
-            		
-              		Log your work easily — record pauses, quantities, and completion in real time.
-            		
-          		</p>
-        	</div>
-			<div class="flex flex-row items-start">
-          		<img
-            	src={checkmark}
-            	alt="checkmark"
-            	class="w-6 lg:w-10 object-contain mt-2 mr-4 lg:mt-4"
-          		/>
-          		<p>
-            		
-              		Track progress at a glance — see live updates on orders and productivity.
-            		
-          		</p>
-        	</div>
-		</div>
-    	<div
-		bind:this={bigCard} 
-		class="big-card w-9/10 lg:w-[30vw] h-fit lg:min-h-[60rem] lg:max-h-screen bg-white text-[1rem] md:text-[1.5rem] xl:text-[2rem] shadow-lg text-[var(--dark-blue)] p-10 flex flex-col justify-start gap-[2.5rem] items-left">
-			<div class="min-h-[150px] lg:min-h-[200px] border-b-4 flex items-center border-[var(--light-blue)]">
-				<h1 class="text-[1.4rem] md:text-[1.7rem] xl:text-[2.5rem] nowrap">
-				<b>Effectino Dashboard — <br>Dashboards & Analytics</b>
-			</h1>
-			</div>
-			
-			<div class="flex flex-row items-start">
-          		<img
-            	src={checkmark}
-            	alt="checkmark"
-            	class="w-6 lg:w-10 object-contain mt-2 mr-4 lg:mt-4"
-          		/>
-          		<p>
-            		
-              		Real-time visibility: Factory monitors and team lead dashboards display live order progress — completed work, ongoing tasks, and ETA vs. actual performance.
-            		
-          		</p>
-        	</div>
-			<div class="flex flex-row items-start">
-          		<img
-            	src={checkmark}
-            	alt="checkmark"
-            	class="w-6 lg:w-10 object-contain mt-2 mr-4 lg:mt-4"
-          		/>
-          		<p>
-            		
-              		Performance insights: Track productivity by employees or teams to identify bottlenecks and improve efficiency.
-            		
-          		</p>
-        	</div>
-			<div class="flex flex-row items-start">
-          		<img
-            	src={checkmark}
-            	alt="checkmark"
-            	class="w-6 lg:w-10 object-contain mt-2 mr-4 lg:mt-4"
-          		/>
-          		<p>
-            		
-              		Transparent operations: Gain a clear overview of the entire production floor — from individual tasks to overall output.
-            		
-          		</p>
-        	</div>
-		</div>
-	</div>
-</div>
-<div class="min-h-[80vh] md:min-h-[70vh] lg:min-h-[40vh] bg-[var(--light-blue)] lg:bg-transparent">
-
-</div>
+  <!-- White section for desktop overlap -->
+  <div class="hidden lg:block bg-[var(--theme-white)] pt-80 pb-20"></div>
 </div>

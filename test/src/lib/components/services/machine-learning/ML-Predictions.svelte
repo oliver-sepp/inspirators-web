@@ -1,7 +1,7 @@
 <script lang="ts">
 import arrow from '$lib/assets/arrow-right.png';
 import number02 from '$lib/assets/02.png';
-import predictionImage from '$lib/assets/machine-learning/ML-2.jpg';
+import predictionImage from '$lib/assets/services/machine-learning/ML-2.jpg';
 </script>
 
 <div class="flex flex-col justify-between md:mt-[15vh] mb-[5vh] md:mb-[10vh]">

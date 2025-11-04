@@ -2,9 +2,9 @@
     import robot from '$lib/assets/humanoid-robot.png';
 </script>
 
-<div class="absolute inset-0 z-20 flex flex-col md:flex-row justify-center items-center md:pl-[10vw] gap-8 md:gap-[25vh] py-[5vh] md:py-[10vh] lg:py-[20vh]">
+<div class="absolute inset-0 z-20 flex flex-col md:flex-row justify-center items-center md:w-8/10 m-auto gap-8 md:gap-[25vh] py-[5vh] md:py-[10vh] lg:py-[20vh]">
 
-    <div class="flex flex-col space-y-2 order-2 md:order-1 whitespace-nowrap text-center">
+    <div class="flex flex-col space-y-2 order-2 md:order-1 whitespace-nowrap text-center md:text-left">
         <h1 class="m-0 text-[5vh] text-[#05266A] md:text-[3rem] lg:text-[4rem] xl:text-[7rem]">
             We work
         </h1>

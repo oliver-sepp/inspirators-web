@@ -7,7 +7,7 @@ import onBoarding from '$lib/assets/products/futudraw/futudraw-onboarding.svg';
 
 <div class="flex flex-col justify-between md:mt-[15vh]">
     <div class="flex flex-col justify-evenly w-full m-5 mb-20 md:flex-row">
-        <div class="w-full text-[#05266A] pb-14 relative md:w-2/5 mx-0">
+        <div class="w-9/10 text-[#05266A] pb-14 relative md:w-2/5 mx-0">
             <h1 class="text-[3rem] md:text-[2rem] lg:text-[3rem] line-height-[0.5]">
                 <b>Easy Onboarding!</b>
             </h1>

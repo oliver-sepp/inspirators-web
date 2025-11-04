@@ -2,7 +2,7 @@
     import arrow from '$lib/assets/arrow-right.png';
     import number01 from '$lib/assets/01.png';
     import checkmark from '$lib/assets/checkmark.png';
-    import EGImage from '$lib/assets/energy/energy-1.png';
+    import EGImage from '$lib/assets/industries/energy/energy-1.png';
 </script>
 
 <div class="flex flex-col justify-between md:mt-[15vh] mb-[5vh] md:mb-[10vh]">

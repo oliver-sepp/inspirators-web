@@ -24,8 +24,6 @@
     </div>
 
     <div class="flex flex-col space-y-2">
-      <p>Contact Us</p>
-      <p>Contact Form</p>
       <a href={`mailto:${email}`} target="_blank" class="hover:underline">{email}</a>
     </div>
 

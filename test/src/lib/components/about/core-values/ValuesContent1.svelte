@@ -1,12 +1,12 @@
 <script lang="ts">
     import arrow from '$lib/assets/arrow-right.png';
     import number01 from '$lib/assets/01.png';
-    import values1 from '$lib/assets/values/values-image1.jpg';
+    import values1 from '$lib/assets/about/values/values-image1.jpg';
 </script>
 
 <div class="flex flex-col justify-between md:mt-[15vh] mb-[5vh] md:mb-[10vh]">
     <div class="flex flex-col justify-evenly w-full m-4 mb-20 md:flex-row">
-        <div class="w-full text-[#05266A] mx-3 pb-14 relative md:w-2/5 mx-0">
+        <div class="w-9/10 text-[#05266A] mx-3 pb-14 relative md:w-2/5 mx-0">
             <h1 class="text-[3rem] md:text-[3.5rem] lg:text-[3rem]">
                 We create products people love to use
             </h1>

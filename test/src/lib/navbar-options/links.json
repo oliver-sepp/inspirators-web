@@ -12,7 +12,8 @@
     "Industries": {
       "Factories, Production": "industries/production",
       "Energy, Utilities": "industries/energy-util",
-      "Building Sector": "industries/building"
+      "Building Sector": "industries/building",
+      "Shipbuilding": "industries/shipbuilding"
     },
     "Partners": {
       "We work with": "partners/partners",

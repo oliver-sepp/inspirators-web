@@ -1,10 +1,10 @@
 <script lang="ts">
-import uiuxDesign from '$lib/assets/custom/uiux-design.svg';
-import systemArc from '$lib/assets/custom/system-arc.svg';
-import dev from '$lib/assets/custom/dev.svg';
-import devops from '$lib/assets/custom/devops.svg';
-import testing from '$lib/assets/custom/testing.svg';
-import support from '$lib/assets/custom/support.svg';
+import uiuxDesign from '$lib/assets/services/custom/uiux-design.svg';
+import systemArc from '$lib/assets/services/custom/system-arc.svg';
+import dev from '$lib/assets/services/custom/dev.svg';
+import devops from '$lib/assets/services/custom/devops.svg';
+import testing from '$lib/assets/services/custom/testing.svg';
+import support from '$lib/assets/services/custom/support.svg';
 </script>
 
 <div class="flex flex-col justify-between mt-[10vh] md:mt-[15vh]">

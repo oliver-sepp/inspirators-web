@@ -2,12 +2,12 @@
 import arrow from '$lib/assets/arrow-right.png';
 import number01 from '$lib/assets/01.png';
 import checkmark from '$lib/assets/checkmark.png';
-import customImage from '$lib/assets/custom/custom-1.png';
+import customImage from '$lib/assets/services/custom/custom-1.png';
 </script>
 
 <div class="flex flex-col justify-between md:mt-[15vh] mb-[5vh] md:mb-[10vh]">
     <div class="flex flex-col justify-evenly w-full m-4 mb-20 md:flex-row">
-        <div class="w-full text-[#05266A] mx-3 pb-14 relative md:w-2/5 mx-0">
+        <div class="w-9/10 text-[#05266A] pb-14 relative md:w-2/5 mx-0">
             <h1 class="text-[3rem] md:text-[4rem] lg:text-[3rem]">
                 Custom Software Development Services
             </h1>

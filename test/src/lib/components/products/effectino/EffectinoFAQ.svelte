@@ -50,7 +50,7 @@
   }
 </script>
 
-<div class="flex flex-col items-center font-bold justify-center md:mt-[15vh] mb-20">
+<div class="flex flex-col items-center font-bold justify-center mt-10 md:mt-[15vh] mb-20">
     <div class="w-8/10 flex justify-center">
         <div class="w-full text-[#05266A] pb-14 relative mx-0">
             <h1 class="text-[3rem] md:text-[3rem] lg:text-[5rem] leading-tight">

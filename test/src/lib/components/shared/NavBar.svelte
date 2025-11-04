@@ -1,10 +1,10 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import LanguagePopUp from "./LanguagePopUp.svelte";
+  // import LanguagePopUp from "./LanguagePopUp.svelte";
   import Links from "../../navbar-options/links.json";
   import { base } from '$app/paths';
   import logo from '$lib/assets/logo.png';
-  import langBtn from '$lib/assets/lang-switch-btn.png';
+  // import langBtn from '$lib/assets/lang-switch-btn.png';
 
   const user = 'info';
   const domain = 'inspirators';
@@ -128,7 +128,7 @@
       >
 
       <!-- Language switch + popup -->
-      <div class="relative flex-shrink-0">
+      <!-- <div class="relative flex-shrink-0">
         <button
           type="button"
           class="bg-[var(--dark-blue)] p-1.5 lg:p-2.5 rounded-full cursor-pointer hover:bg-[var(--light-blue)] transition-all min-w-fit"
@@ -151,7 +151,7 @@
 			/>
           </div>
         {/if}
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -207,7 +207,7 @@
       Get in touch
     </a>
     <div class="relative inline-block">
-  <button
+  <!-- <button
     type="button"
     class="bg-[#05266A] p-3 rounded-full cursor-pointer hover:bg-[#7FC8CB] transition-all"
     on:click={() => (languagePopUpOpen = !languagePopUpOpen)}
@@ -228,7 +228,7 @@
 >
   <LanguagePopUp on:close={() => (languagePopUpOpen = false)} />
 </div>
-  {/if}
+  {/if} -->
 </div>
   </div>
 {/if}
@@ -261,6 +261,7 @@
   .submenu-item:nth-child(1) { animation-delay: 0.1s; }
   .submenu-item:nth-child(2) { animation-delay: 0.3s; }
   .submenu-item:nth-child(3) { animation-delay: 0.5s; }
+  .submenu-item:nth-child(4) { animation-delay: 0.7s; }
 
   @keyframes itemFadeIn {
     from {

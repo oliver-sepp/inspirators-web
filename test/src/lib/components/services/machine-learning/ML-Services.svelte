@@ -1,9 +1,9 @@
 <script lang="ts">
     import prediction from '$lib/assets/products/effectino/bar_chart_light.svg';
     import dashboard from '$lib/assets/products/effectino/monitoring_light.svg';
-    import excel from '$lib/assets/machine-learning/excel.svg';
-    import dataMesh from '$lib/assets/machine-learning/data-mesh.svg';
-    import databricks from '$lib/assets/machine-learning/db-icon.svg';
+    import excel from '$lib/assets/services/machine-learning/excel.svg';
+    import dataMesh from '$lib/assets/services/machine-learning/data-mesh.svg';
+    import databricks from '$lib/assets/services/machine-learning/db-icon.svg';
 </script>
 
 <div class="flex flex-col justify-between mt-[10vh] md:mt-[15vh]">

@@ -8,7 +8,7 @@
 
 <div class="flex flex-col justify-between md:mt-[15vh]">
     <div class="flex flex-col justify-evenly w-full m-4 mb-20 md:flex-row">
-        <div class="w-full text-[#05266A] mx-3 pb-14 relative md:w-2/5 mx-0">
+        <div class="w-9/10 text-[#05266A] mx-3 pb-14 relative md:w-2/5 mx-0">
             <h1 class="text-[3rem] md:text-[3rem] lg:text-[5rem]">
                 <b>FutuDraw NEW BOM Module</b>
             </h1>
@@ -32,6 +32,7 @@
     </div>
     <div class="flex justify-center m-15">
         <img 
+        class="rounded-lg"
         src={futudrawSchema2} 
         alt="Futudraw Schema"
         >

@@ -1,9 +1,9 @@
 <script lang="ts">
 import BuildingHeader from "$lib/components/industries/building/BuildingHeader.svelte";
-import BuildingContent1 from "$lib/components/industries/building/BuildingContent1.svelte";
+import BuildingAlpha from "$lib/components/industries/building/BuildingAlpha.svelte";
 import VectorLayer from "$lib/components/shared/VectorLayer.svelte";
-import BuildingContent2 from "$lib/components/industries/building/BuildingContent2.svelte";
-
+import BuildingPrimo from "$lib/components/industries/building/BuildingPrimo.svelte";
+import BuildingETSNord from "$lib/components/industries/building/BuildingETSNord.svelte";
 </script>
 
 
@@ -13,8 +13,9 @@ import BuildingContent2 from "$lib/components/industries/building/BuildingConten
 
 
     <main class="w-full">
-        <BuildingContent1 />
-        <BuildingContent2 />        
+        <BuildingETSNord />
+        <BuildingAlpha />
+        <BuildingPrimo />        
     </main>
 
 </div>

@@ -1,13 +1,14 @@
 <script lang="ts">
     import arrow from '$lib/assets/arrow-right.png';
     import number01 from '$lib/assets/01.png';
-    import Cooperants from '$lib/assets/member/member-image1.png';
+    import Cooperants from '$lib/assets/pmain/member/member-image1.png';
+    import CooperantsMembers from '$lib/assets/pmain/member/cooperants.png';
 </script>
 
 <div class="flex flex-col justify-between md:mt-[15vh] mb-[10vh]">
     <div class="flex flex-col justify-evenly w-full m-4 mb-20 md:flex-row">
         <div class="w-full text-[#05266A] mx-3 pb-14 relative md:w-2/5 mx-0">
-            <h1 class="text-[5vh] md:text-[8vh] lg:text-[8vh]">
+            <h1 class="text-[3rem] md:text-[4rem] lg:text-[3rem]">
                 Cooperants
             </h1>
             <span class="absolute bottom-0 left-0 w-1/2 border-b-4 border-[#7FC8CB]"></span>
@@ -33,5 +34,14 @@
             class="w-9/10 sm:w-full h-auto object-contain rounded-lg shadow-lg">
         </div>
         
+    </div>
+
+    <div class="flex justify-center mx-auto text-center text-[#05266A] w-9/10 lg:w-3/5 flex-col gap-6 mt-15 lg:mt-30">
+        <h1 class="text-[3rem] md:text-[4rem] lg:text-[3rem] border-b-4 w-fit mx-auto pb-6 border-[#7FC8CB]">
+            Members of Cooperants project
+        </h1>
+        <img 
+        class="bg-white rounded-xl shadow-lg"
+        src={CooperantsMembers} alt="Cooperants Members">
     </div>
 </div>

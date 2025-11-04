@@ -33,7 +33,7 @@ function openVideo() {
     <div class="flex justify-center items-center md:py-10">
         <button 
         on:click={openVideo}
-        class="bg-[var(--dark-blue)] z-49 text-white rounded-full px-10 py-6 mt-10 md:my-10 flex items-center text-[20px] whitespace-nowrap cursor-pointer hover:bg-blue-900 transition-all duration-300 ease-in-out">
+        class="bg-[var(--dark-blue)] z-49 text-white rounded-full px-10 py-6 mt-10 my-10 flex items-center text-[20px] whitespace-nowrap cursor-pointer hover:bg-blue-900 transition-all duration-300 ease-in-out">
             <img 
             src={playBtn} 
             alt="Play Video" 

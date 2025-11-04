@@ -1,6 +1,6 @@
 <script lang="ts">
 import bigArrow from '$lib/assets/products/futudraw/_.svg';
-import bigE from '$lib/assets/products/effectino/E.png';
+import bigE from '$lib/assets/products/effectino/LetterE.svg';
 import bigF from '$lib/assets/products/futudraw/F.svg';
 import bigDark from '$lib/assets/bg-big-dark.png';
 </script>
@@ -11,7 +11,7 @@ import bigDark from '$lib/assets/bg-big-dark.png';
 
     </div>
 
-    <div class="w-full relative flex items-center lg:w-11/12">
+    <div class="w-full relative flex justify-center items-center lg:w-11/12">
         
         <div class="flex w-fit">
             <img src={bigArrow} alt="Big Arrow right" class="h-[25vh] sm:h-[30vh] md:h-[40vh] lg:h-[65vh] flex-1 min-w-0 object-contain">

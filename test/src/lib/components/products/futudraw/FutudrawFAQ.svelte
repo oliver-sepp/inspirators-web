@@ -66,7 +66,7 @@
         <div class="w-8/10 border-b-4 border-[var(--light-blue)] mb-2">
             <!-- Clickable header -->
             <div
-            class="flex flex-row justify-between cursor-pointer items-center py-6 text-[1.7rem] text-[var(--dark-blue)]"
+            class="flex flex-row justify-between cursor-pointer items-center py-6 text-[1.4rem] md:text-[1.7rem] text-[var(--dark-blue)]"
             role="button"
             tabindex="0"
             aria-expanded={openIndex === i}
@@ -81,7 +81,7 @@
 
             <!-- Expandable answer -->
             {#if openIndex === i}
-                <div transition:slide class="mt-2 mb-4 max-w-8/10 text-[1.5rem] font-normal text-[var(--dark-blue)]">
+                <div transition:slide class="mt-2 mb-4 max-w-8/10 text-[1.4rem] font-normal text-[var(--dark-blue)]">
                   {#if faq.answer.includes('\n')}
                     
                     {#each faq.answer.split('\n') as paragraph}
