@@ -12,7 +12,7 @@ import bigDark from '$lib/assets/bg-big-dark.png';
 
     <div class="w-full relative flex justify-center items-center lg:w-11/12">
         
-        <div class="flex w-full gap-1">
+        <div class="flex w-fit gap-1">
             <img src={bigArrow} alt="Big Arrow right" class="h-[25vh] sm:h-[30vh] md:h-[65vh] flex-1 min-w-0 object-contain">
             <img src={bigF} alt="Big F" class="h-[25vh] sm:h-[30vh] md:h-[50vh] md:h-[65vh] flex-1 min-w-0 object-contain">
             <img src={bigD} alt="Big D" class="h-[25vh] sm:h-[30vh] md:h-[50vh] md:h-[65vh] flex-1 min-w-0 object-contain">
