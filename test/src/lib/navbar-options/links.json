@@ -16,8 +16,10 @@
       "Shipbuilding": "industries/shipbuilding"
     },
     "Partners": {
+      "We represent": "partners/represent",
       "We work with": "partners/partners",
       "We are member of": "partners/member"
+      
     },
     "About": {
       "Story": "about/inspirators",

@@ -5,11 +5,11 @@ import number02 from '$lib/assets/02.png';
 
 <div class="flex flex-col md:mt-[15vh] mb-[5vh] md:mb-[10vh]">
   <div class="flex flex-col justify-evenly w-full pl-5 lg:pl-0 mb-20 md:flex-row">
-    <div class="w-full text-[#05266A] pb-14 relative md:w-2/5 mx-0">
+    <div class="w-full text-[var(--dark-blue)] pb-14 relative md:w-2/5 mx-0">
       <h1 class="text-[3rem] md:text-[3rem] lg:text-[5rem] leading-tight">
         <b>Effectino - MES <br /> mobile app</b>
       </h1>
-      <span class="absolute bottom-0 left-0 w-1/2 border-b-4 border-[#7FC8CB]"
+      <span class="absolute bottom-0 left-0 w-1/2 border-b-4 border-[var(--light-blue)]"
       ></span>
     </div>
 

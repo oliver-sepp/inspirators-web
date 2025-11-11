@@ -4,11 +4,11 @@
 
 <div class="absolute inset-0 z-20 flex flex-col md:flex-row justify-center items-center md:pl-[10vw] gap-8 md:gap-[25vh] py-[5vh] md:py-[10vh] lg:py-[20vh]">
 
-    <div class="flex flex-col space-y-2 order-2 md:order-1 text-center whitespace-nowrap">
-        <h1 class="m-0 text-[5vh] text-[#05266A] md:text-[3rem] lg:text-[4rem] xl:text-[7rem]">
+    <div class="flex flex-col text-[var(--dark-blue)] space-y-2 order-2 md:order-1 text-center whitespace-nowrap">
+        <h1 class="m-0 text-[5vh] md:text-[3rem] lg:text-[4rem] xl:text-[7rem]">
             We are 
         </h1>
-        <h1 class="m-0 text-[5vh] text-[#05266A] md:text-[3rem] lg:text-[4rem] xl:text-[7rem]">
+        <h1 class="m-0 text-[5vh] md:text-[3rem] lg:text-[4rem] xl:text-[7rem]">
             member of
         </h1>
         

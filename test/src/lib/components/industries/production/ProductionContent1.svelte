@@ -7,11 +7,11 @@
 
 <div class="flex flex-col justify-between md:mt-[15vh] mb-[5vh] md:mb-[10vh]">
     <div class="flex flex-col justify-evenly w-full m-4 mb-20 md:flex-row">
-        <div class="w-9/10 text-[#05266A] mx-3 pb-14 relative md:w-2/5 mx-0">
+        <div class="w-9/10 text-[var(--dark-blue)] mx-3 pb-14 relative md:w-2/5 mx-0">
             <h1 class="text-[3rem] md:text-[4rem] lg:text-[3rem]">
                 Mobile App for Glamox
             </h1>
-            <span class="absolute bottom-0 left-0 w-1/2 border-b-4 border-[#7FC8CB]"></span>
+            <span class="absolute bottom-0 left-0 w-1/2 border-b-4 border-[var(--light-blue)]"></span>
         </div>
 
         <div class="flex flex-row mt-10 ml-4" >
@@ -19,7 +19,7 @@
             <img src={number02} alt="02" class="max-h-10 md:max-h-15 lg:max-h-20 w-auto mr-7">
         </div>
     </div>
-    <div class="flex flex-col justify-center items-center min-[1000px]:items-start md:gap-[10vw] text-[#05266A] min-[1000px]:flex-row gap-[5vw]">
+    <div class="flex flex-col justify-center items-center min-[1000px]:items-start md:gap-[10vw] text-[var(--dark-blue)] min-[1000px]:flex-row gap-[5vw]">
         
         <div class="flex flex-col order-1 min-[1000px]:order-2 space-y-4 lg:mx-10 w-5/6 text-[20px] lg:w-2/7">
             <p>

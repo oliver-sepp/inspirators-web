@@ -62,7 +62,7 @@
           class="bg-white rounded-lg shadow-2xl p-8 md:p-12"
         >
           <div class="pb-6 mb-8 border-b-4 border-[var(--light-blue)] min-h-[140px] md:min-h-[160px] lg:min-h-[180px] flex items-end">
-            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-[#05266A] leading-tight">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-[var(--dark-blue)] leading-tight">
               Effectino App —<br />
               Simple. Smart. Efficient.
             </h2>
@@ -75,7 +75,7 @@
                 alt="checkmark" 
                 class="w-6 object-contain flex-shrink-0 mt-1"
               />
-              <p class="text-lg md:text-xl text-[#05266A]">
+              <p class="text-lg md:text-xl text-[var(--dark-blue)]">
                 Select work directly from the app — choose prioritized tasks instantly.
               </p>
             </div>
@@ -86,7 +86,7 @@
                 alt="checkmark" 
                 class="w-6 object-contain flex-shrink-0 mt-1"
               />
-              <p class="text-lg md:text-xl text-[#05266A]">
+              <p class="text-lg md:text-xl text-[var(--dark-blue)]">
                 Log your work easily — record pauses, quantities, and completion in real time.
               </p>
             </div>
@@ -97,7 +97,7 @@
                 alt="checkmark" 
                 class="w-6 object-contain flex-shrink-0 mt-1"
               />
-              <p class="text-lg md:text-xl text-[#05266A]">
+              <p class="text-lg md:text-xl text-[var(--dark-blue)]">
                 Track progress at a glance — see live updates on orders and productivity.
               </p>
             </div>
@@ -110,7 +110,7 @@
           class="bg-white rounded-lg shadow-2xl p-8 md:p-12"
         >
           <div class="pb-6 mb-8 border-b-4 border-[var(--light-blue)] min-h-[140px] md:min-h-[160px] lg:min-h-[180px] flex items-end">
-            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-[#05266A] leading-tight">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-[var(--dark-blue)] leading-tight">
               Effectino Dashboard —<br />
               Dashboards & Analytics
             </h2>
@@ -123,7 +123,7 @@
                 alt="checkmark" 
                 class="w-6 object-contain flex-shrink-0 mt-1"
               />
-              <p class="text-lg md:text-xl text-[#05266A]">
+              <p class="text-lg md:text-xl text-[var(--dark-blue)]">
                 Real-time visibility: Factory monitors and team lead dashboards display live order progress — completed work, ongoing tasks, and ETA vs. actual performance.
               </p>
             </div>
@@ -134,7 +134,7 @@
                 alt="checkmark" 
                 class="w-6 object-contain flex-shrink-0 mt-1"
               />
-              <p class="text-lg md:text-xl text-[#05266A]">
+              <p class="text-lg md:text-xl text-[var(--dark-blue)]">
                 Performance insights: Track productivity by employees or teams to identify bottlenecks and improve efficiency.
               </p>
             </div>
@@ -145,7 +145,7 @@
                 alt="checkmark" 
                 class="w-6 object-contain flex-shrink-0 mt-1"
               />
-              <p class="text-lg md:text-xl text-[#05266A]">
+              <p class="text-lg md:text-xl text-[var(--dark-blue)]">
                 Transparent operations: Gain a clear overview of the entire production floor — from individual tasks to overall output.
               </p>
             </div>

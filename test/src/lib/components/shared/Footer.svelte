@@ -7,7 +7,7 @@
   const email = `${user}@${domain}.${tld}`;
 </script>
 
-<div class="bg-white p-6 w-full text-[#05266A]">
+<div class="bg-white p-6 w-full text-[var(--dark-blue)]">
 
     <div class="flex items-start mb-6">
         <img src={logo} alt="Inspirators Logo" class="h-12 w-auto">
@@ -24,11 +24,12 @@
     </div>
 
     <div class="flex flex-col space-y-2">
+      <p><b>Contact Us</b></p>
       <a href={`mailto:${email}`} target="_blank" class="hover:underline">{email}</a>
     </div>
 
     <div class="flex flex-col space-y-2">
-      <p>Follow Us</p>
+      <p><b>Follow Us</b></p>
       <a href="https://www.linkedin.com/company/inspirators-eu/" target="_blank" class="hover:underline">LinkedIn</a>
     </div>
   </div>

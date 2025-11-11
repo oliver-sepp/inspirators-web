@@ -5,14 +5,14 @@
 </script>
 <div class="flex flex-col md:mt-[15vh] mb-[5vh] md:mb-[10vh]">
   <div class="flex flex-col justify-evenly pl-5 lg:pl-0 w-full mb-20 md:flex-row">
-    <div class="w-full text-[#05266A] pb-14 relative md:w-2/5 mx-0">
+    <div class="w-full text-[var(--dark-blue)] pb-14 relative md:w-2/5 mx-0">
       <h1 class="text-[3rem] md:text-[3rem] lg:text-[5rem] leading-tight">
         <b>Effectino - MES</b> 
       </h1>
         <p class="text-[2.5rem]">
             (manufacturing execution system)
         </p>
-      <span class="absolute bottom-0 left-0 w-1/2 border-b-4 border-[#7FC8CB]"
+      <span class="absolute bottom-0 left-0 w-1/2 border-b-4 border-[var(--light-blue)]"
       ></span>
     </div>
 
@@ -31,7 +31,7 @@
   </div>
   <div class="flex justify-evenly">
     <div
-      class="flex flex-col w-full justify-center items-center lg:items-left gap-[10vw] text-[#05266A] sm:flex-col md:flex-row gap-[5vw]"
+      class="flex flex-col w-full justify-center items-center lg:items-left gap-[10vw] text-[var(--dark-blue)] sm:flex-col md:flex-row gap-[5vw]"
     >
       <div class="text-[1.5rem] w-5/6 md:w-2/6">
         <div class="flex flex-row mb-8 items-start md:mb-4">

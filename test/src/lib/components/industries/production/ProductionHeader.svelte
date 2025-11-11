@@ -5,6 +5,9 @@
             Factories, Production
         </h1>
         <p class="text-[1.7rem] text-[var(--dark-blue)] w-full md:w-1/2 text-wrap">
+            Automatic BOM
+        </p>
+        <p class="text-[1.7rem] text-[var(--dark-blue)] w-full md:w-1/2 text-wrap">
             MES (manufacturing execution system)
         </p>
     </div>

@@ -6,11 +6,11 @@
 
 <div class="flex flex-col justify-between md:mt-[15vh] mb-[10vh]">
     <div class="flex flex-col justify-evenly w-full m-4 mb-20 md:flex-row">
-        <div class="w-9/10 text-[#05266A] mx-3 pb-14 relative md:w-2/5 mx-0">
+        <div class="w-9/10 text-[var(--dark-blue)] mx-3 pb-14 relative md:w-2/5 mx-0">
             <h1 class="text-[3rem] md:text-[4rem] lg:text-[3rem]">
                 Partners globally
             </h1>
-            <span class="absolute bottom-0 left-0 w-1/2 border-b-4 border-[#7FC8CB]"></span>
+            <span class="absolute bottom-0 left-0 w-1/2 border-b-4 border-[var(--light-blue)]"></span>
         </div>
 
         <div class="flex flex-row mt-10 ml-4" >
@@ -18,7 +18,7 @@
             <img src={number01} alt="01" class="max-h-10 md:max-h-20 w-auto mr-7">
         </div>
     </div>
-    <div class="flex flex-col justify-center gap-[10vw] text-[#05266A] md:flex-row gap-[5vw]">
+    <div class="flex flex-col justify-center gap-[10vw] text-[var(--dark-blue)] md:flex-row gap-[5vw]">
         
         <div class="flex flex-col space-y-4 mx-10 w-5/6 text-[20px] md:w-1/6 lg:w-2/7">
             <p>

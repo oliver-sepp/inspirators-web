@@ -9,11 +9,11 @@ import support from '$lib/assets/services/custom/support.svg';
 
 <div class="flex flex-col justify-between mt-[10vh] md:mt-[15vh]">
     <div class="flex flex-row justify-center align-center w-full mb-20">
-        <div class="w-full text-[#05266A] mx-3 pb-14 relative md:w-3/5 xl:w-2/5 mx-0">
+        <div class="w-full text-[var(--dark-blue)] mx-3 pb-14 relative md:w-3/5 xl:w-2/5 mx-0">
             <h1 class="text-[3rem] md:text-[3rem] lg:text-[5rem] w-full text-center">
                 <b>Full-cycle services</b>
             </h1>
-            <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full sm:w-3/4 border-b-4 border-[#7FC8CB]"></span>
+            <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full sm:w-3/4 border-b-4 border-[var(--light-blue)]"></span>
         </div>
 
     </div>

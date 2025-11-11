@@ -14,8 +14,8 @@ import bigDark from '$lib/assets/bg-big-dark.png';
     
     <div class="flex w-fit">
       
-      <img src={bigA} alt="Big A" class="h-[25vh] sm:h-[30vh] md:h-[40vh] lg:h-[65vh] flex-1 object-contain">
-      <img src={bigI} alt="Big I" class="h-[25vh] sm:h-[30vh] md:h-[40vh] lg:h-[65vh] flex-1 object-contain">
+      <img src={bigA} alt="Big A" class="h-[25vh] sm:h-[30vh] md:h-[40vh] lg:h-[30vw] flex-1 object-contain">
+      <img src={bigI} alt="Big I" class="h-[25vh] sm:h-[30vh] md:h-[40vh] lg:h-[30vw] flex-1 object-contain">
     
     </div>
   

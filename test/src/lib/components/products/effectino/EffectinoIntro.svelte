@@ -15,15 +15,15 @@ function openVideo() {
 </script>
 <div class="flex flex-col justify-between md:mt-[15vh]">
     <div class="flex flex-row justify-center align-center w-full mb-20">
-        <div class="w-full text-[#05266A] mx-3 pb-14 relative md:w-2/5 mx-0">
+        <div class="w-full text-[var(--dark-blue)] mx-3 pb-14 relative md:w-2/5 mx-0">
             <h1 class="text-[3rem] md:text-[3rem] lg:text-[5rem] w-full text-center">
                 <b>What is Effectino?</b>
             </h1>
-            <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full sm:w-3/4 border-b-4 border-[#7FC8CB]"></span>
+            <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full sm:w-3/4 border-b-4 border-[var(--light-blue)]"></span>
         </div>
 
     </div>
-    <div class="flex flex-col justify-center text-[#05266A] md:flex-row">
+    <div class="flex flex-col justify-center text-[var(--dark-blue)] md:flex-row">
         <div class="flex flex-col space-y-4 mx-10 w-5/6 text-[24px] md:w-3/6 align-center">
             <p class="text-center">
                 Effectino is a cutting-edge MES time and task management solution to boost efficiency by 20% and more

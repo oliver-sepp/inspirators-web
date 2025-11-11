@@ -54,11 +54,11 @@
 
 <div class="flex flex-col items-center font-bold justify-center md:mt-[15vh] mb-20">
     <div class="w-8/10 flex justify-center">
-        <div class="w-full text-[#05266A] pb-14 relative mx-0">
+        <div class="w-full text-[var(--dark-blue)] pb-14 relative mx-0">
             <h1 class="text-[3rem] md:text-[3rem] lg:text-[5rem] leading-tight">
                 FAQ
             </h1>
-            <span class="absolute bottom-0 left-0 w-full border-b-4 border-[#7FC8CB]"
+            <span class="absolute bottom-0 left-0 w-full border-b-4 border-[var(--light-blue)]"
             ></span>
         </div>
     </div>

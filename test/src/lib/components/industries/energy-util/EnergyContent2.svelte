@@ -7,11 +7,11 @@
 
 <div class="flex flex-col justify-between md:mt-[15vh] mb-[5vh] md:mb-[10vh]">
     <div class="flex flex-col justify-evenly w-full m-4 mb-20 md:flex-row">
-        <div class="w-9/10 text-[#05266A] mx-3 pb-14 relative md:w-2/5 mx-0">
+        <div class="w-9/10 text-[var(--dark-blue)] mx-3 pb-14 relative md:w-2/5 mx-0">
             <h1 class="text-[3rem] md:text-[4rem] lg:text-[3rem]">
-                Cloud-Based Gas Metering Solution for Adven Estonia
+                Cloud-based gas metering solution for Adven Estonia
             </h1>
-            <span class="absolute bottom-0 left-0 w-1/2 border-b-4 border-[#7FC8CB]"></span>
+            <span class="absolute bottom-0 left-0 w-1/2 border-b-4 border-[var(--light-blue)]"></span>
         </div>
 
         <div class="flex flex-row mt-10 ml-4" >
@@ -19,7 +19,7 @@
             <img src={number02} alt="02" class="max-h-10 md:max-h-15 lg:max-h-20 w-auto mr-7">
         </div>
     </div>
-    <div class="flex flex-col justify-center items-center min-[1000px]:items-start md:gap-[10vw] text-[#05266A] min-[1000px]:flex-row gap-[5vw]">
+    <div class="flex flex-col justify-center items-center min-[1000px]:items-start md:gap-[10vw] text-[var(--dark-blue)] min-[1000px]:flex-row gap-[5vw]">
         
         <div class="w-1/1 order-2 min-[1000px]:order-1 flex justify-center items-start md:block md:w-2/6 lg:w-2/7 overflow-hidden">
             <img 
@@ -29,11 +29,17 @@
         </div>
 
         <div class="flex flex-col min-[1000px]:order-2 space-y-4 lg:mx-10 w-5/6 text-[20px] lg:w-2/7">
+            <p>
+                Inspirators! delivered a cloud-based gas metering solution for Adven Estonia that significantly enhances data accuracy, transparency, and operational efficiency. The system enables hourly gas-consumption measurements, replacing the previous monthly resolution and providing real-time visibility for both customers and service providers.
+            </p>
+            <p>
+                <b>Key benefits:</b>
+            </p>
             <div class="flex flex-row mb-4 items-start">
                 <img src={checkmark} alt="checkmark" class="w-6 object-contain mr-4 pt-1.5">
                 <p>
                     <b>
-                        Gas measurement resolution increase from once a month to every hour
+                        Gas measurement resolution increased from once a month to every hour
                     </b>
                 </p>
             </div>
@@ -41,7 +47,7 @@
                 <img src={checkmark} alt="checkmark" class="w-6 object-contain mr-4 pt-1.5">
                 <p>
                     <b>
-                        Better transparency for customers and service providers through data availability
+                        Improved transparency for customers and service providers through real-time data availability
                     </b>
                 </p>
             </div>
@@ -49,7 +55,7 @@
                 <img src={checkmark} alt="checkmark" class="w-6 object-contain mr-4 pt-1.5">
                 <p>
                     <b>
-                        Automated process (IoT incl.)
+                        Automated processes, including IoT-based data collection
                     </b>
                 </p>
             </div>
@@ -57,7 +63,7 @@
                 <img src={checkmark} alt="checkmark" class="w-6 object-contain mr-4 pt-1.5">
                 <p>
                     <b>
-                        The solution is based on #Azure technology
+                        Built on Microsoft Azure technology for scalability and reliability
                     </b>
                 </p>
             </div>
@@ -65,7 +71,7 @@
                 <img src={checkmark} alt="checkmark" class="w-6 object-contain mr-4 pt-1.5">
                 <p>
                     <b>
-                        Better control over the data with dedicated tools
+                        Better control over data with dedicated tools for monitoring and analysis
                     </b>
                 </p>
             </div>
@@ -73,7 +79,7 @@
                 <img src={checkmark} alt="checkmark" class="w-6 object-contain mr-4 pt-1.5">
                 <p>
                     <b>
-                        Fully working integration with gas metering management legacy system
+                        Fully integrated with the existing gas metering management legacy system
                     </b>
                 </p>
             </div>
