@@ -6,8 +6,7 @@
 	import { page } from '$app/stores';
 	import { base } from '$app/paths';
 	import '../style.css';
-	export const ssr = false;
-	export const csr = true;
+	
 	let { children } = $props();
 
 	const excludedPaths = ['/products/futudraw', '/products/effectino'];
