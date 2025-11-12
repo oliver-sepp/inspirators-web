@@ -11,20 +11,14 @@ const config = {
     adapter: adapter({
       pages: 'build',
       assets: 'build',
-      fallback: '404.html'
+      fallback: '404.html',
+      strict: false
     }),
-
     paths: {
-      base: dev ? '' : '/inspirators-web'
+      base: dev ? '' : '/inspirators-web',
     },
-
-    prerender: {
-      handleHttpError: 'warn', // prevents build errors on 404s
-      entries: ['*'] // pre-render all known routes
-    },
-
-    appDir: 'internal' // this is fine for GH Pages
-  }
+    appDir: 'internal',
+  },
 };
 
 export default config;
