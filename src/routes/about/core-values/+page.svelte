@@ -6,6 +6,11 @@ import ValuesContent3 from '$lib/components/about/core-values/ValuesContent3.sve
 import VectorLayer from '$lib/components/shared/VectorLayer.svelte';
 </script>
 
+<svelte:head>
+	<title>About | Values | Inspirators!</title>
+	<meta name="description" content="" />
+</svelte:head>
+
 <div class=" min-h-screen w-full">
 
 <VectorLayer />

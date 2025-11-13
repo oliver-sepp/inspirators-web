@@ -4,6 +4,11 @@ import RepresentContent from '$lib/components/partners/represent/RepresentConten
 import VectorLayer from '$lib/components/shared/VectorLayer.svelte';
 </script>
 
+<svelte:head>
+    <title>Partners | We represent | Inspirators!</title>
+    <meta name="description" content="" />
+</svelte:head>
+
 <RepresentHeader />
 <VectorLayer />
 

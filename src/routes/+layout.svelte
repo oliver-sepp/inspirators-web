@@ -4,15 +4,13 @@
 	import Footer from '$lib/components/shared/Footer.svelte';
 	import BottomLayer from '$lib/components/BottomLayer.svelte';
 	import { page } from '$app/stores';
-	import { base } from '$app/paths';
 	import '../style.css';
 	
 	let { children } = $props();
 
 	const excludedPaths = ['/products/futudraw', '/products/effectino'];
 
-	// derive current path reactively (runes-style)
-	const currentPath = $derived($page.url.pathname.replace(base, '') || '/');
+	const currentPath = $derived($page.url.pathname || '/');
 </script>
 
 <svelte:head>

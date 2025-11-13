@@ -5,6 +5,11 @@ import PartnersContent2 from '$lib/components/partners/partners/PartnersContent2
 import VectorLayer from '$lib/components/shared/VectorLayer.svelte';
 </script>
 
+<svelte:head>
+    <title>Partners | We work with | Inspirators!</title>
+    <meta name="description" content="" />
+</svelte:head>
+
 <PartnersHeader />
 <VectorLayer />
 

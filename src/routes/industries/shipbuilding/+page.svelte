@@ -5,6 +5,10 @@ import Shipbuilding1 from "$lib/components/industries/shipbuilding/Shipbuilding1
 import Shipbuilding2 from "$lib/components/industries/shipbuilding/Shipbuilding2.svelte";
 </script>
 
+<svelte:head>
+	<title>Industires | Shipbuilding | Inspirators!</title>
+	<meta name="description" content="" />
+</svelte:head>
 
 <div class="min-h-screen w-full">
     <ShipbuildingHeader />

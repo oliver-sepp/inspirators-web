@@ -4,6 +4,11 @@ import TeamContent from '$lib/components/about/team/TeamContent.svelte';
 import VectorLayer from '$lib/components/shared/VectorLayer.svelte';
 </script>
 
+<svelte:head>
+	<title>About | Team | Inspirators!</title>
+	<meta name="description" content="" />
+</svelte:head>
+
 <div class="min-h-screen w-full">
 
 <VectorLayer />

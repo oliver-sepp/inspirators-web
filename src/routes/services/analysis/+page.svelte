@@ -5,6 +5,10 @@
     import AnalysisContent2 from '$lib/components/services/analysis/AnalysisContent2.svelte';
 </script>
 
+<svelte:head>
+    <title>Services | AI-assisted analysis | Inspirators!</title>
+    <meta name="description" content="" />
+</svelte:head>
 
 <div class=" min-h-screen w-full">
     

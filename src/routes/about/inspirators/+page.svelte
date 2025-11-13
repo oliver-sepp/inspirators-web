@@ -8,6 +8,11 @@ import VectorLayer from '$lib/components/shared/VectorLayer.svelte';
 
 </script>
 
+<svelte:head>
+	<title>About | Story | Inspirators!</title>
+	<meta name="description" content="" />
+</svelte:head>
+
 <div class="min-h-screen w-full">
 
 

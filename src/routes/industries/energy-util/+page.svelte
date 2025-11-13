@@ -5,6 +5,10 @@ import EnergyContent1 from "$lib/components/industries/energy-util/EnergyContent
 import EnergyContent2 from "$lib/components/industries/energy-util/EnergyContent2.svelte";
 </script>
 
+<svelte:head>
+	<title>Industries | Energy, Utilities | Inspirators!</title>
+	<meta name="description" content="" />
+</svelte:head>
 
 <div class="min-h-screen w-full">
     <EnergyHeader />

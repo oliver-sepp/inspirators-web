@@ -6,6 +6,10 @@ import ProductionContent1 from "$lib/components/industries/production/Production
 import ProductionContent2 from "$lib/components/industries/production/ProductionContent2.svelte";
 </script>
 
+<svelte:head>
+	<title>Industries | Factories, Production | Inspirators!</title>
+	<meta name="description" content="" />
+</svelte:head>
 
 <div class="min-h-screen w-full">
     <ProductionHeader />

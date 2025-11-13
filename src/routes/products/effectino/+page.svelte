@@ -11,6 +11,11 @@ import EffectinoFlowChart from "$lib/components/products/effectino/EffectinoFlow
 import EffectinoPricing from "$lib/components/products/effectino/EffectinoPricing.svelte";
 </script>
 
+<svelte:head>
+    <title>Products | Effectino | Inspirators!</title>
+    <meta name="description" content="" />
+</svelte:head>
+
 
 <div class="min-h-screen w-full">
     <EffectinoBottomLayer />

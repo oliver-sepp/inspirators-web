@@ -10,6 +10,10 @@ import MLDatabricks from "$lib/components/services/machine-learning/ML-Databrick
   import MLServices from "$lib/components/services/machine-learning/ML-Services.svelte";
 </script>
 
+<svelte:head>
+    <title>Services | AI and machine learning | Inspirators!</title>
+    <meta name="description" content="" />
+</svelte:head>
 
 <div class="min-h-screen w-full">
     <MLHeader />

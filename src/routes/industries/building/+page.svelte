@@ -6,6 +6,10 @@ import BuildingPrimo from "$lib/components/industries/building/BuildingPrimo.sve
 import BuildingETSNord from "$lib/components/industries/building/BuildingETSNord.svelte";
 </script>
 
+<svelte:head>
+    <title>Industries | Building | Inspirators!</title>
+    <meta name="description" content="" />
+</svelte:head>
 
 <div class="min-h-screen w-full">
     <BuildingHeader />

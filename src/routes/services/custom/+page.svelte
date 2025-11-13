@@ -6,6 +6,10 @@ import CustomContent2 from "$lib/components/services/custom/CustomContent2.svelt
 import CustomCycle from "$lib/components/services/custom/CustomCycle.svelte";
 </script>
 
+<svelte:head>
+    <title>Services | Custom software | Inspirators!</title>
+    <meta name="description" content="" />
+</svelte:head>
 
 <div class="min-h-screen w-full">
     <CustomHeader />

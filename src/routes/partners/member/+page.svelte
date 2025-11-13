@@ -6,6 +6,11 @@ import VectorLayer from '$lib/components/shared/VectorLayer.svelte';
 
 </script>
 
+<svelte:head>
+    <title>Partners | We are member of | Inspirators!</title>
+    <meta name="description" content="" />
+</svelte:head>
+
 <MemberHeader />
 <VectorLayer />
 

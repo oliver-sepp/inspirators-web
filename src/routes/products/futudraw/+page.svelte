@@ -11,6 +11,11 @@ import FutudrawFAQ from '$lib/components/products/futudraw/FutudrawFAQ.svelte';
 import FutudrawBOM from '$lib/components/products/futudraw/FutudrawBOM.svelte';
 </script>
 
+<svelte:head>
+    <title>Products | Futudraw | Inspirators!</title>
+    <meta name="description" content="" />
+</svelte:head>
+
 <div class="min-h-screen w-full">
     
     <FutudrawBottomLayer />
